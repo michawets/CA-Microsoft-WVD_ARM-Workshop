@@ -83,7 +83,7 @@ In my example, this would be
 3. You will be promted to change the password by providing the current password & a new password.<br/>
 Provide the password you got from section 2 and provide a new password.<br/>
 Note this new password down, as this will be the credentials you will need in the next sections
-
+![Change new admin user password](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-ChangeAdminPassword.png)
 
 <script type="text/javascript">
     setTimeout(function() { 
