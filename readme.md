@@ -1,6 +1,6 @@
 ## Welcome to the Microsoft & Cloud-Architect WVD Workshop
 
-These are the Hands-on Lab steps, part of the *Microsoft & Cloud-Architect WVD Workshop*.
+These are the Hands-on Lab steps, part of the *Microsoft & Cloud-Architect WVD ARM (Spring update) Workshop*.
 
 If you have any questions, just ask **Micha** or **Bart** for further assistance
 
