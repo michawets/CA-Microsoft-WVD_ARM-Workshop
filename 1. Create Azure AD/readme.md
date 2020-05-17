@@ -14,6 +14,7 @@ We will do this in 2 sections:
 1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
 
 2. Click on **Create a Resource**
+![Create a new Azure Resource](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-CreateResource.png)
 
 3. Typ in **Azure Active Directory** and click on the Azure AD option
 ![Create a new Azure AD Resource](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-AddResource-AzureAD.png)
