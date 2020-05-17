@@ -1,4 +1,4 @@
-[Start](/MicrosoftWVDWorkshop/) / [3. Grant permissions to Windows Virtual Desktop](/MicrosoftWVDWorkshop/3.%20Grant%20permissions%20to%20Windows%20Virtual%20Desktop)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [3. Grant permissions to Windows Virtual Desktop](/CA-Microsoft-WVD_ARM-Workshop/3.%20Grant%20permissions%20to%20Windows%20Virtual%20Desktop)
 # 3. Grant permissions to Windows Virtual Desktop
 
 In this step, you grant permissions to the **Windows Virtual Desktop service** so it can query your newly create Azure AD for administrative and end-user tasks.
@@ -25,7 +25,7 @@ https://login.microsoftonline.com/wvdworkshopt01.onmicrosoft.com/adminconsent?cl
 3. Open this url in a new browser & sign in with admin-account from the newly created Azure AD
 
 4. Select **Accept**<br/>
-![Accept Server Consent](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-AcceptServerConsent.png)
+![Accept Server Consent](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-AcceptServerConsent.png)
 
 5. Close the browser
 
@@ -42,7 +42,7 @@ https://login.microsoftonline.com/wvdworkshopt01.onmicrosoft.com/adminconsent?cl
 8. Open this 2nd url in a new browser & sign in with admin-account from the newly created Azure AD
 
 9. Select **Accept**<br/>
-![Accept Client Consent](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-AcceptClientConsent.png)
+![Accept Client Consent](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-AcceptClientConsent.png)
 <br/>
 <br/>
 
@@ -58,22 +58,22 @@ https://portal.azure.com/wvdworkshopt01.onmicrosoft.com
 ```
 
 2. In the search bar within the Azure portal, search for **Enterprise applications** and select the entry that appears under the Services category.<br/>
-![Search for Enterprise applications](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-Search-EnterpriseApplications.png)
+![Search for Enterprise applications](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Search-EnterpriseApplications.png)
 
 3. Within Enterprise applications, search for **Windows Virtual Desktop**.<br/>
 You'll see the two applications that you provided consent for in the previous section. <br/>
 Of these two apps, select **Windows Virtual Desktop**.<br/>
-![Search & select Windows Virtual Desktop](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-EnterpriseApps-SelectWVD.png)
+![Search & select Windows Virtual Desktop](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-EnterpriseApps-SelectWVD.png)
 
 4. Select **Users and groups**<br/>
 You might see that the administrator who granted consent to the application is already listed with the Default Access role assigned. This is not enough, the admin account also needs the TenantCreator role to create a Windows Virtual Desktop tenant<br/>
 Click **Add User**<br/>
-![Add User](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-EnterpriseApps-AddUser.png)
+![Add User](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-EnterpriseApps-AddUser.png)
 
 5. Click on **Users**, select the **Tenant Admin** on the right side, click on **Select**, and finish the wizard by clicking on **Assign**<br/>
-![Assign Tenant Creator](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-AssignTenantCreator.png)
+![Assign Tenant Creator](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-AssignTenantCreator.png)
 
-![Assigned Tenant Creator](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-EnterpriseApps-AddedWVD.png)
+![Assigned Tenant Creator](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-EnterpriseApps-AddedWVD.png)
 
 
 <script type="text/javascript">

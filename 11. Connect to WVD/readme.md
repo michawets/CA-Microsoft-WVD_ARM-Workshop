@@ -1,4 +1,4 @@
-[Start](/MicrosoftWVDWorkshop/) / [11. Connect to WVD](/MicrosoftWVDWorkshop/11.%20Connect%20to%20WVD)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [11. Connect to WVD](/CA-Microsoft-WVD_ARM-Workshop/11.%20Connect%20to%20WVD)
 # 11. Connect to WVD
 
 There are multiple possibilities to connect to Windows Virtual Desktop: 

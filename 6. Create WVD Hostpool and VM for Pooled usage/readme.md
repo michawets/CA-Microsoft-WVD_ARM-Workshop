@@ -1,4 +1,4 @@
-[Start](/MicrosoftWVDWorkshop/) / [6. Create WVD Hostpool and VM for Pooled usage from the Azure Marketplace](/MicrosoftWVDWorkshop/6.%20Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage/)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [6. Create WVD Hostpool and VM for Pooled usage from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/6.%20Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage/)
 # 6. Create WVD Hostpool and VM for Pooled usage from the Azure Marketplace
 
 In this step, we will create a host pool within our Windows Virtual Desktop tenant (created in step 4) for Pooled usage. The tasks include:
@@ -17,10 +17,10 @@ We will perform these tasks by using the **Microsoft Azure Marketplace offering*
 2. Click on **Resource Groups**<br/>
 Select the **wvd-workshop-sessionhosts-rg** Resource Group<br/>
 Click on **Add**<br/>
-![Add Resource in Resource Group](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-WVDResourceGroup-Add.png)
+![Add Resource in Resource Group](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVDResourceGroup-Add.png)
 
 3. Search for **Windows Virtual Desktop** and select **Windows Virtual Desktop - Provision a host pool**
-![Search for WVD in Marketplace](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-Marketplace-SearchForWVD.png)
+![Search for WVD in Marketplace](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Marketplace-SearchForWVD.png)
 
 4. Click on **Create** to confirm
 
@@ -43,7 +43,7 @@ DemoUser001@wvdworkshopt01.onmicrosoft.com
 4. The first info should already be completed, as we started from the Resource Group.<br/>
 Select **Next**
 
-![WVD Wizard - Basics](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-WVDWizard-Basics.png)
+![WVD Wizard - Basics](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVDWizard-Basics.png)
 
 ## Configure virtual machines
 
@@ -60,7 +60,7 @@ The virtual machines will be called "wvd-t-pool-0," "wvd-t-pool-1," and so on
 
 3. Select **Next**
 
-![WVD Wizard - Virtual Machines](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-WVDWizard-VMs.png)
+![WVD Wizard - Virtual Machines](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVDWizard-VMs.png)
 
 ## Virtual machine settings
 
@@ -86,7 +86,7 @@ Then choose a subnet to host the virtual machines<br/>
 
 5. Select **Next**.
 
-![WVD Wizard - Configure Virtual Machines](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-WVDWizard-ConfigVMs.png)
+![WVD Wizard - Configure Virtual Machines](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVDWizard-ConfigVMs.png)
 
 ## Windows Virtual Desktop tenant information
 
@@ -108,7 +108,7 @@ admin@wvdworkshopt01.onmicrosoft.com
 
 4. Select **Next**.
 
-![WVD Wizard - WVD Settings](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-WVDWizard-WVDSettings.png)
+![WVD Wizard - WVD Settings](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVDWizard-WVDSettings.png)
 
 ## Complete setup and create the virtual machines
 

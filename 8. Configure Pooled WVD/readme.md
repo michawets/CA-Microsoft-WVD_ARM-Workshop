@@ -1,4 +1,4 @@
-[Start](/MicrosoftWVDWorkshop/) / [8. Configure Pooled WVD](/MicrosoftWVDWorkshop/8.%20Configure%20Pooled%20WVD)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [8. Configure Pooled WVD](/CA-Microsoft-WVD_ARM-Workshop/8.%20Configure%20Pooled%20WVD)
 # 8. Configure Pooled WVD
 
 We will configure the Pooled WVD deployment further in this step.
@@ -26,7 +26,7 @@ In my example, this would be *admin@wvdworkshopt01.onmicrosoft.com*<br/>
 ```powershell
 Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
 ```
-![Connect to the WVD Service](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-ConnectToWVDService.png)
+![Connect to the WVD Service](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-ConnectToWVDService.png)
 
 
 ## Get information about your WVD deployment
@@ -35,7 +35,7 @@ Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
 ```powershell
 Get-RdsTenant
 ```
-![Get-RdsTenant](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-GetRdsTenant.png)
+![Get-RdsTenant](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-GetRdsTenant.png)
 
 2. Get your WVD Hostpool information
 ```powershell
@@ -45,7 +45,7 @@ In my Example, this would be
 ```powershell
 Get-RdsHostPool -TenantName "WvdWorkshopT01"
 ```
-![Get-RdsHostPool](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-GetRdsHostpool.png)
+![Get-RdsHostPool](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-GetRdsHostpool.png)
 
 3. Get your WVD Sessionhosts information
 ```powershell
@@ -55,7 +55,7 @@ In my Example, this would be
 ```powershell
 Get-RdsSessionHost -TenantName "WvdWorkshopT01" -HostPoolName "MyFirstHostpool"
 ```
-![Get-RdsSessionHost](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-GetRdsSessionHost.png)
+![Get-RdsSessionHost](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-GetRdsSessionHost.png)
 
 4. Get your WVD AppGroups information & assigned user(s)
 ```powershell
@@ -67,7 +67,7 @@ In my Example, this would be
 Get-RdsAppGroup -TenantName "WvdWorkshopT01" -HostPoolName "MyFirstHostpool"
 Get-RdsAppGroupUser -TenantName "WvdWorkshopT01" -HostPoolName "MyFirstHostpool" -AppGroupName "Desktop Application Group"
 ```
-![Get-RdsAppGroup & Get-RdsAppGrouUser](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-GetRdsAppGroup.png)
+![Get-RdsAppGroup & Get-RdsAppGrouUser](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-GetRdsAppGroup.png)
 
 As you can see, there is only 1 AppGroup and 1 user assigned<br/>
 This is the user we entered into the WVD MArketplace Wizard in Step 5<br/>
@@ -86,7 +86,7 @@ In my Example, this would be
 ```powershell
 New-RdsAppGroup -TenantName "WvdWorkshopT01" -HostPoolName "MyFirstHostpool" -Name "MyPublishedApps" -ResourceType RemoteApp
 ```
-![New-RdsAppGroup](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-NewRdsAppGroup.png)
+![New-RdsAppGroup](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-NewRdsAppGroup.png)
 
 2. Assign the 2nd demo user to the new AppGroup
 ```powershell
@@ -96,7 +96,7 @@ In my Example, this would be
 ```powershell
 Add-RdsAppGroupUser -TenantName "WvdWorkshopT01" -HostPoolName "MyFirstHostpool" -AppGroupName "MyPublishedApps" -UserPrincipalName "DemoUser002@wvdworkshopt01.onmicrosoft.com"
 ```
-![Add-RdsAppGroupUser](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-AddRdsAppGroupUser.png)
+![Add-RdsAppGroupUser](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-AddRdsAppGroupUser.png)
 
 
 ## Publish new application in RemoteApp group
@@ -113,7 +113,7 @@ Get-RdsStartMenuApp -TenantName "WvdWorkshopT01" -HostPoolName "MyFirstHostpool"
 ## More readable:
 Get-RdsStartMenuApp -TenantName "WvdWorkshopT01" -HostPoolName "MyFirstHostpool" -AppGroupName "MyPublishedApps" | select Friendlyname, AppAlias
 ```
-![Get-RdsStartMenuApp](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-GetRdsStartMenuApp.png)
+![Get-RdsStartMenuApp](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-GetRdsStartMenuApp.png)
 
 2. Publish **Excel** & **Paint** in the AppGroup using the AppAlias
 ```powershell
@@ -124,7 +124,7 @@ In my Example, this would be
 New-RdsRemoteApp -TenantName "WvdWorkshopT01" -HostPoolName "MyFirstHostpool" -AppGroupName "MyPublishedApps" -Name "Excel" -AppAlias "excel"
 New-RdsRemoteApp -TenantName "WvdWorkshopT01" -HostPoolName "MyFirstHostpool" -AppGroupName "MyPublishedApps" -Name "MSPaint" -AppAlias "paint"
 ```
-![New-RdsRemoteApp](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-NewRdsRemoteApp.png)
+![New-RdsRemoteApp](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-NewRdsRemoteApp.png)
 
 
 ## Configure Load-balancing mechanisms on the Hostpool

@@ -1,4 +1,4 @@
-[Start](/MicrosoftWVDWorkshop/) / [9. Configure Personal WVD](/MicrosoftWVDWorkshop/9.%20Configure%20Personal%20WVD)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [9. Configure Personal WVD](/CA-Microsoft-WVD_ARM-Workshop/9.%20Configure%20Personal%20WVD)
 # 9. Configure Personal WVD
 
 We will configure the Personal WVD deployment further in this step.
@@ -20,7 +20,7 @@ In my example, this would be *admin@wvdworkshopt01.onmicrosoft.com*<br/>
 ```powershell
 Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
 ```
-![Connect to the WVD Service](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-ConnectToWVDService.png)
+![Connect to the WVD Service](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-ConnectToWVDService.png)
 
 
 ## Connect users to their Personal sessionhosts.

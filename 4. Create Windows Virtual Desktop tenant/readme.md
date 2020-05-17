@@ -1,4 +1,4 @@
-[Start](/MicrosoftWVDWorkshop/) / [4. Create Windows Virtual Desktop tenant](/MicrosoftWVDWorkshop/4.%20Create%20Windows%20Virtual%20Desktop%20tenant)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [4. Create Windows Virtual Desktop tenant](/CA-Microsoft-WVD_ARM-Workshop/4.%20Create%20Windows%20Virtual%20Desktop%20tenant)
 # 4. Create Windows Virtual Desktop tenant
 
 Now that you've granted the Windows Virtual Desktop service permissions to query Azure Active Directory and assigned the TenantCreator role to a user account, you can create a Windows Virtual Desktop tenant.
@@ -26,12 +26,12 @@ https://portal.azure.com/wvdworkshopt01.onmicrosoft.com
 ```
 
 2. Search for **Azure Active Directory** in the search bar and select the entry that appears under the Services category.<br/>
-![Search Azure Active Directory](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-Search-AzureAD.png)
+![Search Azure Active Directory](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Search-AzureAD.png)
 
 3. Scroll down in the menu and click on **Properties**<br />
 Look for **Directory ID**, and then select the **clipboard icon**.<br />
 Paste this in your Notepad(++)/VS Code as the **AadTenantId** value.<br/>
-![Copy Azure AD Directory ID to clipboard](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-CopyAzureADDirID.png)
+![Copy Azure AD Directory ID to clipboard](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-CopyAzureADDirID.png)
 <br/>
 <br/>
 
@@ -68,7 +68,7 @@ New-RdsTenant -Name "WvdWorkshopT01" -AadTenantId "f4e6b597-ff88-4b44-9768-376dd
 > **Note**<br/>
 > The name you choose for your new Windows Virtual Desktop tenant should be globally unique. 
 
-![Powershell: Create new WVD Tenant](https://michawets.github.io/MicrosoftWVDWorkshop/images/Powershell-NewRdsTenant.png)
+![Powershell: Create new WVD Tenant](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-NewRdsTenant.png)
 
 
 

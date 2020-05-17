@@ -1,4 +1,4 @@
-[Start](/MicrosoftWVDWorkshop/) / [12. Configure Security - RBAC & MFA](/MicrosoftWVDWorkshop/12.%20Configure%20Security%20-%20RBAC%20%26%20MFA)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [12. Configure Security - RBAC & MFA](/CA-Microsoft-WVD_ARM-Workshop/12.%20Configure%20Security%20-%20RBAC%20%26%20MFA)
 # 12. Configure Security - RBAC & MFA
 
 In this step, you will enforce MFA for a DemoUser on AzureAD level to see how easy it is.<br/>
@@ -23,15 +23,15 @@ https://portal.azure.com/wvdworkshopt01.onmicrosoft.com
 3. Click on **Users** in the menu
 
 4. Click on **Multi-Factor Authentication**<br/>
-![Click on MFA](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-ClickOnMFA.png)
+![Click on MFA](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-ClickOnMFA.png)
 
 5. Select **DemoUser001** from the list and click on **enable**<br/>
 Confirm enabling MFA for the user<br/>
-![Enable MFA](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-EnableMFA.png)
+![Enable MFA](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-EnableMFA.png)
 
 6. Select **DemoUser001** again from the list and click on **enforce**<br/>
 Confirm enforcing MFA for the user<br/>
-![Enforce MFA](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-EnforceMFA.png)
+![Enforce MFA](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-EnforceMFA.png)
 
 7. Login & try to launch the Full Desktop as **DemoUser001** using the HTML5 webclient<br/>
 You will be guided through the wizard of MFA<br/>

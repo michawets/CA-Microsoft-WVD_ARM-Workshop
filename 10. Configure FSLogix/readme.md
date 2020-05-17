@@ -1,4 +1,4 @@
-[Start](/MicrosoftWVDWorkshop/) / [10. Configure FSLogix](/MicrosoftWVDWorkshop/10.%20Configure%20FSLogix)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [10. Configure FSLogix](/CA-Microsoft-WVD_ARM-Workshop/10.%20Configure%20FSLogix)
 # 10. Configure FSLogix
 
 We will configure the FSLogix on Domain Level in this step.
@@ -11,16 +11,16 @@ In this step, you will:
 1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
 
 2. Go to **Virtual Machines**, select **adVM**, select **Disks** & click on **+ Add data disk**<br/>
-![Add data disk](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-VirtualMachine-AddDataDisk.png)
+![Add data disk](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-VirtualMachine-AddDataDisk.png)
 
 3. In the dropdown, select **Create disk**<br/>
-![Create disk](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-VirtualMachine-CreateDisk.png)
+![Create disk](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-VirtualMachine-CreateDisk.png)
 
 4. Enter **adVM_DataDisk-FSLogix** as diskname, change the size to **128GB Premium SSD** & click on **Create**<br/>
-![Create managed disk](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-VirtualMachine-CreateManagedDisk.png)
+![Create managed disk](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-VirtualMachine-CreateManagedDisk.png)
 
 5. Change the Host Caching to **None** and click on **Save**
-![Save managed disk](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-VirtualMachine-SaveDataDisk.png)
+![Save managed disk](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-VirtualMachine-SaveDataDisk.png)
 
 6. RDP to your DC (See Step 2 how to connect)
 
@@ -77,14 +77,14 @@ Copy-Item -Path "C:\temp\fslogix\fslogix.adml" -Destination "C:\Windows\PolicyDe
 
 3. Create a new Policy Object (below *Group Policy Objects* from your domain) and name it **FSLogix - Default Policy**.<br/>
 Apply these settings:<br/>
-![Create FSLogix Policy](https://michawets.github.io/MicrosoftWVDWorkshop/images/WindowsAD-FSLogixPolicy.png)
+![Create FSLogix Policy](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/WindowsAD-FSLogixPolicy.png)
 
 4. Create a new *Organizational Unit* named **WVD Sessionhosts**<br/>
 Move all Sessionhosts to the new OU<br/>
-![FSLogix Sessionhost OU](https://michawets.github.io/MicrosoftWVDWorkshop/images/WindowsAD-WVDSessionhosts.png)
+![FSLogix Sessionhost OU](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/WindowsAD-WVDSessionhosts.png)
 
 5. Apply the **FSLogix - Default Policy** policy to the new OU<br/>
-![Apply FSLogix policy on OU](https://michawets.github.io/MicrosoftWVDWorkshop/images/WindowsAD-ApplyFSLogixPolicy.png)
+![Apply FSLogix policy on OU](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/WindowsAD-ApplyFSLogixPolicy.png)
 
 6. Reboot all WVD servers for the policy to apply.<br/>
 This can be done using this Powershell oneliner, causing the Windows FW to be disabled (for ping) & reboot server<br/>
