@@ -1,4 +1,4 @@
-[Start](/MicrosoftWVDWorkshop/) / [1. Create new Azure AD](/MicrosoftWVDWorkshop/1.%20Create%20Azure%20AD)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [1. Create new Azure AD](/CA-Microsoft-WVD_ARM-Workshop/1.%20Create%20Azure%20AD)
 # 1. Create Azure AD Tenant
 
 First step is creating a seperate Azure AD Tenant, with a new Admin account in that Tenant.
@@ -16,16 +16,16 @@ We will do this in 2 sections:
 2. Click on **Create a Resource**
 
 3. Typ in **Azure Active Directory** and click on the Azure AD option
-![Create a new Azure AD Resource](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-AddResource-AzureAD.png)
+![Create a new Azure AD Resource](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-AddResource-AzureAD.png)
 
 4. Click on **Create**<br>
-![Create AzureAD](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-Create-AzureAD.png)
+![Create AzureAD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Create-AzureAD.png)
 
 5. Complete the **Azure AD creation wizard** and click on **Create**
 > **IMPORTANT!**<br/>
 > * The **Initial Domain Name** (NetBios later on) **cannot exceed the 15 char limit** (first part of the domainname - before .onmicrosoft.com)
 
-![Create Azure AD Wizard](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-Create-AzureADWizard.png)
+![Create Azure AD Wizard](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Create-AzureADWizard.png)
 
 <br/>
 <br/>
@@ -42,28 +42,28 @@ https://portal.azure.com/wvdworkshopt01.onmicrosoft.com
 ```
 
 2. Click on **Azure Active Directory** - **Users**<br>
-![Open Azure AD - Users](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-OpenUsers.png)
+![Open Azure AD - Users](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-OpenUsers.png)
 
 3. Click on **New User**<br>
-![New Azure AD User](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-AddUser.png)
+![New Azure AD User](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-AddUser.png)
 
 4. Fill in the **New user** wizard, creating a new **Admin@{tenant.onmicrosoft.com}**<br>
 Check **Show Password** and copy this password to your Notepad<br>
 Click **Create**<br>
-![Create New Azure AD User Wizard](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-Create-AzureADUserWizard.png)
+![Create New Azure AD User Wizard](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Create-AzureADUserWizard.png)
 
 5. Click on the newly create Admin user<br>
-![Open Azure AD User](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-Open-AzureAdUser.png)
+![Open Azure AD User](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Open-AzureAdUser.png)
 
 6. Click on **Directory role** - **Add Assignment**<br>
-![Directory Role - Add Assignment](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-AzureADUser-DirectoryRole-AddAssignment.png)
+![Directory Role - Add Assignment](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-AzureADUser-DirectoryRole-AddAssignment.png)
 
 7. Select **Global Administrator** and click on **Add**<br>
 > **Warning!** This is not (always) a best practice, but for this workshop the easiest way<br>
 > You should consider carefully who to make Global Administrator
 
 
-![Assign Global Administrator rights](https://michawets.github.io/MicrosoftWVDWorkshop/images/AzurePortal-AssignGlobalAdmin.png)
+![Assign Global Administrator rights](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-AssignGlobalAdmin.png)
 
 
 ## Sign in with the new Azure AD admin account
