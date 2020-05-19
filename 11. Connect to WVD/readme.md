@@ -12,7 +12,7 @@ In this step, you will see how to connect to the WVD deployment you created & co
 
 ### Install the client
 
-1. Download the WVD client from the [Microsoft site](https://go.microsoft.com/fwlink/?linkid=2068602)
+1. Download the WVD client from the [Microsoft site](https://go.microsoft.com/fwlink/?linkid=2068602)(64bit client)
 
 2. Install the WVD client on your PC
 
