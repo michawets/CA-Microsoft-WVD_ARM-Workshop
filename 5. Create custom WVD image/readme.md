@@ -28,6 +28,8 @@ We will do this in 4 sections:
  > Select a Windows 10 Enterprise **multi-session** from the list!
 
 ![Select Windows 10 version](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Imaging-SelectWindowsVersion.png)<br/>
+___
+
 ![Select Windows 10 version](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Imaging-SearchWindows10MU.png)
 
 6. Fill in the wizard fields to ...
