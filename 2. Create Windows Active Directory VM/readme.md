@@ -119,7 +119,6 @@ SamAccountName: *AdminUser001*<br/>
 SamAccountName: *AdminUser002*<br/>
 etc<br/><br/>
 You can run the following *Powershell script* in a Powershell console (as Administrator)<br/>
-Change the **$dc variable** to the name of your Active Directory!!<br/>
 ```powershell
 $ErrorActionPreference = "Stop"
 $dc = (Get-ADDomain).DistinguishedName
@@ -158,6 +157,7 @@ Start-ADSyncSyncCycle -PolicyType Delta
 ```
  > Note: If you get an error about the ADSync Module, try <br/>
  > Import-Module "C:\Program Files\Microsoft Azure AD Sync\Bin\ADSync\ADSync.psd1"
+ > Start-ADSyncSyncCycle -PolicyType Delta
 
 ![Force AD Connect sync](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/WindowsAD-ForceSync.png)
 
