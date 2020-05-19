@@ -96,7 +96,7 @@ ___
 ![Capture VM](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Imaging-CaptureVm.png)
 
 4. Complete the **Capture Wizard**
- - For Name, either accept the pre-populated name or enter a name that you would like to use for the image.
+ - For Name, enter "MyCustomWVDManagedImage".
  - For Resource group, select the **wvd-workshop-infra-rg** resource group from the drop-down list.
  - Select **Automatically delete this virtual machine after creating the image**.
  - Select **Off** for Zone resiliency.
