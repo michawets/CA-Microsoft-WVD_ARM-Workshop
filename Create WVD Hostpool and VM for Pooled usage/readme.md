@@ -1,5 +1,5 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [6. Create WVD Hostpool and VM for Pooled usage from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/6.%20Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage/)
-# 6. Create WVD Hostpool and VM for Pooled usage from the Azure Marketplace
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create WVD Hostpool and VM for Pooled usage from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage/)
+# Create WVD Hostpool and VM for Pooled usage from the Azure Marketplace
 
 In this step, we will create a host pool within our Windows Virtual Desktop tenant (created in step 4) for Pooled usage. The tasks include:
 

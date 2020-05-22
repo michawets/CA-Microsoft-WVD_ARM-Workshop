@@ -4,16 +4,16 @@ These are the Hands-on Lab steps, part of the *Microsoft & Cloud-Architect WVD A
 
 If you have any questions, just ask **Micha** or **Bart** for further assistance
 
-1. [Create new Azure AD](/CA-Microsoft-WVD_ARM-Workshop/1.%20Create%20Azure%20AD)
-2. [Create Windows Active Directory VM](/CA-Microsoft-WVD_ARM-Workshop/2.%20Create%20Windows%20Active%20Directory%20VM)
-3. [Create custom WVD image](/CA-Microsoft-WVD_ARM-Workshop/5.%20Create%20custom%20WVD%20image)
-4. [Create WVD Workspace, Hostpool and VM from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/6.%20Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage)
-5. [Create WVD Workspace, Hostpool and VM from the ARM Template](/CA-Microsoft-WVD_ARM-Workshop/7.%20Create%20WVD%20Hostpool%20and%20VM%20for%20Personal%20usage/)
-6. [Configure Pooled WVD](/CA-Microsoft-WVD_ARM-Workshop/8.%20Configure%20Pooled%20WVD)
-7. [Configure Personal WVD](/CA-Microsoft-WVD_ARM-Workshop/9.%20Configure%20Personal%20WVD)
-8. [Configure FSLogix](/CA-Microsoft-WVD_ARM-Workshop/10.%20Configure%20FSLogix)
-9. [Connect to WVD](/CA-Microsoft-WVD_ARM-Workshop/11.%20Connect%20to%20WVD)
-10. [Configure Security - RBAC & MFA](/CA-Microsoft-WVD_ARM-Workshop/12.%20Configure%20Security%20-%20RBAC%20%26%20MFA)
+1. [Create new Azure AD](/CA-Microsoft-WVD_ARM-Workshop/Create%20Azure%20AD)
+2. [Create Windows Active Directory VM](/CA-Microsoft-WVD_ARM-Workshop/Create%20Windows%20Active%20Directory%20VM)
+3. [Create custom WVD image](/CA-Microsoft-WVD_ARM-Workshop/Create%20custom%20WVD%20image)
+4. [Create WVD Workspace, Hostpool and VM from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage)
+5. [Create WVD Workspace, Hostpool and VM from the ARM Template](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Personal%20usage/)
+6. [Configure Pooled WVD](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Pooled%20WVD)
+7. [Configure Personal WVD](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Personal%20WVD)
+8. [Configure FSLogix](/CA-Microsoft-WVD_ARM-Workshop/Configure%20FSLogix)
+9. [Connect to WVD](/CA-Microsoft-WVD_ARM-Workshop/Connect%20to%20WVD)
+10. [Configure Security - RBAC & MFA](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Security%20-%20RBAC%20%26%20MFA)
 
 <script type="text/javascript">
     setTimeout(function() { 

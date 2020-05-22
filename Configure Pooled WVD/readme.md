@@ -1,5 +1,5 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [8. Configure Pooled WVD](/CA-Microsoft-WVD_ARM-Workshop/8.%20Configure%20Pooled%20WVD)
-# 8. Configure Pooled WVD
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Configure Pooled WVD](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Pooled%20WVD)
+# Configure Pooled WVD
 
 We will configure the Pooled WVD deployment further in this step.
 

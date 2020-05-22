@@ -1,5 +1,5 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [4. Create Windows Virtual Desktop tenant](/CA-Microsoft-WVD_ARM-Workshop/4.%20Create%20Windows%20Virtual%20Desktop%20tenant)
-# 4. Create Windows Virtual Desktop tenant
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create Windows Virtual Desktop tenant](/CA-Microsoft-WVD_ARM-Workshop/Create%20Windows%20Virtual%20Desktop%20tenant)
+# Create Windows Virtual Desktop tenant
 
 Now that you've granted the Windows Virtual Desktop service permissions to query Azure Active Directory and assigned the TenantCreator role to a user account, you can create a Windows Virtual Desktop tenant.
 

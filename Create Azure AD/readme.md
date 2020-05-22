@@ -1,5 +1,5 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [1. Create new Azure AD](/CA-Microsoft-WVD_ARM-Workshop/1.%20Create%20Azure%20AD)
-# 1. Create Azure AD Tenant
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create new Azure AD](/CA-Microsoft-WVD_ARM-Workshop/Create%20Azure%20AD)
+# Create Azure AD Tenant
 
 First step is creating a seperate Azure AD Tenant, with a new Admin account in that Tenant.
 We will use this tenant to store the WVD users, by using **Azure AD Connect** in our "OnPrem" Windows Active Directory.

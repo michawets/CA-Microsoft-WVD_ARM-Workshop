@@ -1,5 +1,5 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [5. Create custom WVD image](/CA-Microsoft-WVD_ARM-Workshop/5.%20Create%20custom%20WVD%20image)
-# 5. Create custom WVD image
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create custom WVD image](/CA-Microsoft-WVD_ARM-Workshop/Create%20custom%20WVD%20image)
+# Create custom WVD image
 
 In this step, you will create a custom WVD image containing FSLogix, Acrobat Reader & Visual Studio Code pre-installed. In this way, your newly deployed WVD Sessionhosts will already have this software available.
 

@@ -1,5 +1,5 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [12. Configure Security - RBAC & MFA](/CA-Microsoft-WVD_ARM-Workshop/12.%20Configure%20Security%20-%20RBAC%20%26%20MFA)
-# 12. Configure Security - RBAC & MFA
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Configure Security - RBAC & MFA](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Security%20-%20RBAC%20%26%20MFA)
+# Configure Security - RBAC & MFA
 
 In this step, you will enforce MFA for a DemoUser on AzureAD level to see how easy it is.<br/>
 After that, you will setup RBAC on the WVD Workspace using multiple AdminUser accounts<br/> 

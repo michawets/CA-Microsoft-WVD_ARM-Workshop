@@ -1,5 +1,5 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [10. Configure FSLogix](/CA-Microsoft-WVD_ARM-Workshop/10.%20Configure%20FSLogix)
-# 10. Configure FSLogix
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Configure FSLogix](/CA-Microsoft-WVD_ARM-Workshop/Configure%20FSLogix)
+# Configure FSLogix
 
 We will configure the FSLogix on Domain Level in this step.
 

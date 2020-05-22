@@ -1,5 +1,5 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [9. Configure Personal WVD](/CA-Microsoft-WVD_ARM-Workshop/9.%20Configure%20Personal%20WVD)
-# 9. Configure Personal WVD
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Configure Personal WVD](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Personal%20WVD)
+# Configure Personal WVD
 
 We will configure the Personal WVD deployment further in this step.
 

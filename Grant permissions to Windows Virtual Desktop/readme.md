@@ -1,5 +1,5 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [3. Grant permissions to Windows Virtual Desktop](/CA-Microsoft-WVD_ARM-Workshop/3.%20Grant%20permissions%20to%20Windows%20Virtual%20Desktop)
-# 3. Grant permissions to Windows Virtual Desktop
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Grant permissions to Windows Virtual Desktop](/CA-Microsoft-WVD_ARM-Workshop/Grant%20permissions%20to%20Windows%20Virtual%20Desktop)
+# Grant permissions to Windows Virtual Desktop
 
 In this step, you grant permissions to the **Windows Virtual Desktop service** so it can query your newly create Azure AD for administrative and end-user tasks.
 Then we will give the Admin account in the Azure AD Tenant the necessary permissions to create a WVD Tenant

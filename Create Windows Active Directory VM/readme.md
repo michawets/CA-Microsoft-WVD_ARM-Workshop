@@ -1,5 +1,5 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [2. Create Windows Active Directory VM](/CA-Microsoft-WVD_ARM-Workshop/2.%20Create%20Windows%20Active%20Directory%20VM)
-# 2. Create Windows Active Directory VM
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create Windows Active Directory VM](/CA-Microsoft-WVD_ARM-Workshop/Create%20Windows%20Active%20Directory%20VM)
+# Create Windows Active Directory VM
 
 In this step, you will
 * Deploy a new VM using the **Template Deployment** from the Marketplace
