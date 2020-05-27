@@ -29,7 +29,7 @@ Specify a name for the VM (for example **IgelVM**) and click on **Next**<br/>
 Select **Generation 2** for the VM and click on **Next**<br/>
 ![HyperV-SpecifyGeneration](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-SpecifyGeneration.png)
 
-Assign the memory of the IgelVM (preferably 2GB or more) and click on **Next**<br/>
+Assign the memory of the IgelVM (preferably *2GB* or more) and click on **Next**<br/>
 ![HyperV-AssignMemory](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-AssignMemory.png)
 
 Select the correct *Virtual Switch* (depending on the HyperV Switch setup) and click on **Next**<br/>
@@ -91,6 +91,42 @@ When finished, Click on **Shutdown**
 
 Make sure the ISO is disconnected, and then click on **Start** again.
 ![HyperV-ConnectToVm-StartVm](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-ConnectToVm-StartVm.png)
+
+## Configure your IGEL OS
+
+In the email from IGEL, click on the link **7. Click here to activate your software licenses and download the license file.**<br/>
+![IgelEmail-2](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/IgelEmail-2.png)
+
+On the IGEL page, enter the MAC Address you assigned to your VM<br/>
+![IgelActivateMAC](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/IgelActivateMAC.png)
+
+Right-click on the **download license** button and select **Copy Link address** (or your browser alternative option)<br/>
+Keep that License url in a notepad<br/>
+![IgelSaveLink](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/IgelSaveLink.png)
+
+
+
+
+
+![HyperV-Igel-SelectLanguage](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-SelectLanguage.png)
+![HyperV-Igel-SelectKeyboardLayout](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-SelectKeyboardLayout.png)
+![HyperV-Igel-ConfigureTimezone](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-ConfigureTimezone.png)
+
+Configure the correct Date & Time, click on Apply and click on Next<br/>
+![HyperV-Igel-ConfigureDateTime](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-ConfigureDateTime.png)
+![HyperV-Igel-ActivateYourIgel](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-ActivateYourIgel.png)
+![HyperV-Igel-ActivateYourIgel](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-ActivateYourIgel-starter.png)
+![HyperV-Igel-SkipCloudGateway](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-SkipCloudGateway.png)
+![HyperV-Igel-restart](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-restart.png)
+
+Follow the steps explained here: https://kb.igel.com/igelos-11.03.500/en/how-to-connect-igel-os-to-windows-virtual-desktop-28251665.html
+
+
+![HyperV-Igel-StartWVD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-StartWVD.png)
+![HyperV-Igel-EvenMFASupport](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-EvenMFASupport.png)
+![HyperV-Igel-SelectYourApplicationOrDesktop](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-SelectYourApplicationOrDesktop.png)
+
+
 
 
 
