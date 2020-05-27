@@ -1,10 +1,15 @@
 [Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create Igel OS on HyperV](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
 # Create Igel OS on HyperV
-Start your HyperV Manager
+Start your HyperV Manager<br/>
 ![HyperV-Startup](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-StartUp.png)
-Right-click your PC, goto **New** and select **Virtual Machine**
+
+Right-click your PC, goto **New** and select **Virtual Machine**<br/>
 ![HyperV-NewVM](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-NewVM.png)
+
+Specify a name for your VM (for example **IgelVM**) and click on **Next**<br/>
 ![HyperV-SpecifyName&Location](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-SpecifyName&Location.png)
+
+
 ![HyperV-SpecifyGeneration](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-SpecifyGeneration.png)
 ![HyperV-AssignMemory](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-AssignMemory.png)
 ![HyperV-ConfigureNetworking](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-ConfigureNetworking.png)
@@ -34,3 +39,17 @@ Make sure the ISO is disconnected, and then click on **Start** again.
 
 
 
+<script type="text/javascript">
+    setTimeout(function() { 
+            document.getElementById("sidebar").style.display = "none";
+            document.getElementById("main-content").style.width = "90%"
+            var x = document.getElementsByClassName('inner clearfix'); 
+            x[0].style.width = "75%";
+            var x = document.getElementsByClassName('inner'); 
+            x[0].style.width = "90%";
+            var x = document.getElementsByTagName('h1'); 
+            x[0].style.width = "90%";
+            x[0].style.textAlign = "center"
+            x[0].innerHTML = "Microsoft & Cloud-Architect WVD Workshop"
+        }, 250);
+</script>
