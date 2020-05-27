@@ -9,9 +9,13 @@ Right-click your PC, goto **New** and select **Virtual Machine**<br/>
 Specify a name for your VM (for example **IgelVM**) and click on **Next**<br/>
 ![HyperV-SpecifyName&Location](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-SpecifyName&Location.png)
 
-
+Select **Generation 2** for the VM and click on **Next**<br/>
 ![HyperV-SpecifyGeneration](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-SpecifyGeneration.png)
+
+Assign the memory of your VM (preferably 2GB or more) and click on **Next**<br/>
 ![HyperV-AssignMemory](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-AssignMemory.png)
+
+
 ![HyperV-ConfigureNetworking](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-ConfigureNetworking.png)
 ![HyperV-ConfigureHDD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-ConfigureHDD.png)
 ![HyperV-InstallOptions](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-InstallOptions.png)
