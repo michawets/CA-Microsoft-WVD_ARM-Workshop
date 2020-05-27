@@ -14,7 +14,7 @@ If you have any questions, just ask **Micha** or **Bart** for further assistance
 8. [Configure FSLogix](/CA-Microsoft-WVD_ARM-Workshop/Configure%20FSLogix)
 9. [Connect to WVD](/CA-Microsoft-WVD_ARM-Workshop/Connect%20to%20WVD)
 10. [Configure Security - RBAC & MFA](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Security%20-%20RBAC%20%26%20MFA)
-11. [Install Igel OS on HyperV](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
+11. [Install IGEL OS on Hyper-V](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
 
 <script type="text/javascript">
     setTimeout(function() { 

@@ -1,23 +1,42 @@
 [Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create Igel OS on HyperV](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
-# Create Igel OS on HyperV
-Start your HyperV Manager<br/>
+# Create Igel OS on Hyper-V
+
+In this step, you will install the IGEL OS on a Hyper-V VM.
+
+We will do this in 2 sections: 
+* Register for a free trial
+* Install the IGEL OS on a Hyper-V VM
+
+
+## Register for a free trial
+Go to <a href="https://www.igel.com/form-download/" target="_blank">https://www.igel.com/form-download/</a>, fill in the details and register for the 30 day free trial.
+
+You will get an email with all details. Click on the link **4. Download the IGEL OS and convert a machine**
+
+
+## Install the IGEL OS on a Hyper-V VM
+Start the HyperV Manager<br/>
 ![HyperV-Startup](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-StartUp.png)
 
-Right-click your PC, goto **New** and select **Virtual Machine**<br/>
+Right-click the HyperV-server (local PC), goto **New** and select **Virtual Machine**<br/>
 ![HyperV-NewVM](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-NewVM.png)
 
-Specify a name for your VM (for example **IgelVM**) and click on **Next**<br/>
+Specify a name for the VM (for example **IgelVM**) and click on **Next**<br/>
 ![HyperV-SpecifyName&Location](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-SpecifyName&Location.png)
 
 Select **Generation 2** for the VM and click on **Next**<br/>
 ![HyperV-SpecifyGeneration](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-SpecifyGeneration.png)
 
-Assign the memory of your VM (preferably 2GB or more) and click on **Next**<br/>
+Assign the memory of the IgelVM (preferably 2GB or more) and click on **Next**<br/>
 ![HyperV-AssignMemory](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-AssignMemory.png)
 
-
+Select the correct Switch (depending on the HyperV Switch setup) and click on **Next**<br/>
 ![HyperV-ConfigureNetworking](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-ConfigureNetworking.png)
+
+Configure the Disk settings from the VM (for example 32GB) and click on **Next**<br/>
 ![HyperV-ConfigureHDD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-ConfigureHDD.png)
+
+Select **Install an operating system from a bootable image file**, click on **Browse**, select the **Igel ISO** that was downloaded and click on **Next**<br/>
 ![HyperV-InstallOptions](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-InstallOptions.png)
 ![HyperV-Finish](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Finish.png)
 ![HyperV-OpenSwitchManager](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-OpenSwitchManager.png)
