@@ -11,8 +11,10 @@ We will do this in 2 sections:
 ## Register for a free trial
 Go to <a href="https://www.igel.com/form-download/" target="_blank">https://www.igel.com/form-download/</a>, fill in the details and register for the 30 day free trial.
 
-You will get an email with all details. Click on the link **4. Download the IGEL OS and convert a machine**
+You will get an email with all details. Click on the link **4. Download the IGEL OS and convert a machine**<br/>
+![IgelEmail](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/IgelEmail.png)
 
+Download the Zip-file, extract the zip-file and remember the location
 
 ## Install the IGEL OS on a Hyper-V VM
 Start the HyperV Manager<br/>
