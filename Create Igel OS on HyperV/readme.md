@@ -134,7 +134,7 @@ Confirm all changes by clicking on **Restart**<br/>
 
 
 After the reboot, you can configure the IGEL OS WVD setup. <br/>
-Detailed steps how to do this can be found here: <a href="" target="_blank">https://kb.igel.com/igelos-11.03.500/en/how-to-connect-igel-os-to-windows-virtual-desktop-28251665.html</a>
+Detailed steps how to do this can be found here: <a href="https://kb.igel.com/igelos-11.03.500/en/how-to-connect-igel-os-to-windows-virtual-desktop-28251665.html" target="_blank">https://kb.igel.com/igelos-11.03.500/en/how-to-connect-igel-os-to-windows-virtual-desktop-28251665.html</a>
 
 
 Once configured, you will see the **WVD session** name. Double click on it to launch<br/>
