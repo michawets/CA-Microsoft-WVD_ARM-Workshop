@@ -1,11 +1,12 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create Igel OS on HyperV](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
-# Create Igel OS on Hyper-V
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create IGEL OS on Hyper-V](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
+# Create IGEL OS on Hyper-V
 
-In this step, you will install the IGEL OS on a Hyper-V VM.
+In this step, you will install the IGEL OS on a Hyper-V VM, run it and connect to the WVD service (even with MFA enabled!)
 
-We will do this in 2 sections: 
+We will do this in 3 sections: 
 * Register for a free trial
 * Install the IGEL OS on a Hyper-V VM
+* Configure your IGEL OS
 
 
 ## Register for a free trial
@@ -86,14 +87,13 @@ Confirm the warning by clicking on **Install firmware**<br/>
 The **IGEL OS** will now be installed on the Hyper-V VM<br/>
 ![HyperV-Igel-InstallationProgress](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-InstallationProgress.png)
 
-When finished, Click on **Shutdown**
+When finished, Click on **Shutdown**<br/>
 ![HyperV-Igel-Finished](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-Finished.png)
 
-Make sure the ISO is disconnected, and then click on **Start** again.
-![HyperV-ConnectToVm-StartVm](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-ConnectToVm-StartVm.png)
+
 
 ## Configure your IGEL OS
-
+<!--
 In the email from IGEL, click on the link **7. Click here to activate your software licenses and download the license file.**<br/>
 ![IgelEmail-2](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/IgelEmail-2.png)
 
@@ -104,26 +104,46 @@ Right-click on the **download license** button and select **Copy Link address** 
 Keep that License url in a notepad<br/>
 ![IgelSaveLink](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/IgelSaveLink.png)
 
+-->
+Make sure the ISO is disconnected, and then click on **Start** again.<br/>
+![HyperV-ConnectToVm-StartVm](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-ConnectToVm-StartVm.png)
 
-
-
-
+Select your preferred language and click on **Next**<br/>
 ![HyperV-Igel-SelectLanguage](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-SelectLanguage.png)
+
+Select your **Keyboard Layout** and click on **Next**<br/>
 ![HyperV-Igel-SelectKeyboardLayout](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-SelectKeyboardLayout.png)
+
+Select your **Timezone & Location** and click on **Next**<br/>
 ![HyperV-Igel-ConfigureTimezone](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-ConfigureTimezone.png)
 
-Configure the correct Date & Time, click on Apply and click on Next<br/>
+Configure the correct **Date & Time**, click on **Apply** and click on **Next**<br/>
 ![HyperV-Igel-ConfigureDateTime](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-ConfigureDateTime.png)
+
+<!--
 ![HyperV-Igel-ActivateYourIgel](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-ActivateYourIgel.png)
+-->
+Select **Continue with Starter License** (or other option if applicable for you) and click on **Next**<br/>
 ![HyperV-Igel-ActivateYourIgel](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-ActivateYourIgel-starter.png)
+
+Skip the Cloud Gateway Agent Setup by clicking on **Skip**<br/>
 ![HyperV-Igel-SkipCloudGateway](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-SkipCloudGateway.png)
+
+Confirm all changes by clicking on **Restart**<br/>
 ![HyperV-Igel-restart](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-restart.png)
 
-Follow the steps explained here: https://kb.igel.com/igelos-11.03.500/en/how-to-connect-igel-os-to-windows-virtual-desktop-28251665.html
+
+After the reboot, you can configure the IGEL OS WVD setup. <br/>
+Detailed steps how to do this can be found here: <a href="" target="_blank">https://kb.igel.com/igelos-11.03.500/en/how-to-connect-igel-os-to-windows-virtual-desktop-28251665.html</a>
 
 
+Once configured, you will see the **WVD session** name. Double click on it to launch<br/>
 ![HyperV-Igel-StartWVD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-StartWVD.png)
+
+When you have **MFA** configured for your account, you will get the MFA popup & request<br/>
 ![HyperV-Igel-EvenMFASupport](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-EvenMFASupport.png)
+
+Select the Remote Application or Remote Desktop configured for your user account to launch it <br/>
 ![HyperV-Igel-SelectYourApplicationOrDesktop](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-SelectYourApplicationOrDesktop.png)
 
 
