@@ -36,6 +36,12 @@ Fill in the Basics and click on **Next: Application groups >**<br/>
  > At this time, only US locations are available for the WVD ARM resources (Workspace, Hostpool, ApplicationGroup)
 ![Create Workspace - Basics](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Basics.png)
 
+4. At this time, we do not have any Application Groups, so we do not register any Application Groups yet.<br/>
+![Create Workspace - ApplicationGroups](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-ApplicationGroups.png)
+
+5. Finish the wizard and click on **Create**<br/>
+![Create Workspace - Create](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Create.png)
+
 Depending on how many VMs you’re creating, this process can take 30 minutes or more to complete.
 
 
