@@ -1,27 +1,26 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create WVD Workspace, Hostpool and VMs from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage/)
-# Create WVD Workspace, Hostpool and VMs from the Azure Marketplace
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create WVD Hostpool and VM for Pooled usage from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage/)
+# Create WVD Hostpool and VM for Pooled usage from the Azure Marketplace
 
-In this step, we will create a WVD Workspace, Hostpool & VMs within our Windows Virtual Desktop subscription for Pooled usage. The tasks include:
+In this step, we will create a host pool within our Windows Virtual Desktop tenant (created in step 4) for Pooled usage. The tasks include:
 
-* Create a WVD Workspace
-* Create a WVD Hostpool
-* Create VMs in the Azure subscription.
-* Join the VMs to the Active Directory domain.
-* Register the VMs with the Windows Virtual Desktop service.
+* Create a VM in the Azure subscription.
+* Join the VM to the Active Directory domain.
+* Create a host pool in Windows Virtual Desktop.
+* Register the VM with the Windows Virtual Desktop service.
 
-We will perform these tasks by using the **Microsoft Azure Marketplace offering**.
-
-## 
+We will perform these tasks by using the **Microsoft Azure Marketplace offering**. 
 
 ## Find the Marketplace offer
 
 1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
 
-2. Search for **Windows Virtual Desktop**
-![Search for WVD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-SearchWindowsVirtualDesktop.png)
+2. Click on **Resource Groups**<br/>
+Select the **wvd-workshop-sessionhosts-rg** Resource Group<br/>
+Click on **Add**<br/>
+![Add Resource in Resource Group](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVDResourceGroup-Add.png)
 
-This is the overview you get in the Windows Virtual Desktop pane
-![WVD pane](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-SearchWindowsVirtualDesktop-Overview.png)
+3. Search for **Windows Virtual Desktop** and select **Windows Virtual Desktop - Provision a host pool**
+![Search for WVD in Marketplace](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Marketplace-SearchForWVD.png)
 
 4. Click on **Create** to confirm
 
