@@ -80,8 +80,8 @@ Click on **Review + create**<br/>
 ![Create Hostpool - Overview](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-Create.png)
 
 
-Depending on how many VMs you’re creating, this process can take 30 minutes or more to complete.
-
+Depending on how many VMs you’re creating, this process can take 15 minutes or more to complete.
+![Create Hostpool - Deployment](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-deployment.png)
 
 
 <script type="text/javascript">
