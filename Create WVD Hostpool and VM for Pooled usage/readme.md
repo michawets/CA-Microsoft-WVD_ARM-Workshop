@@ -1,7 +1,7 @@
 [Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create WVD Workspace, Hostpool and VMs from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage/)
 # Create WVD Workspace, Hostpool and VMs from the Azure Marketplace
 
-In this step, we will create a WVD Workspace, Hostpool & VMs within our Windows Virtual Desktop subscription for Pooled usage. The tasks include:
+In this step, we will create a WVD Workspace, Hostpool & VMs within our Windows Virtual Desktop subscription for Pooled usage. The task include:
 
 * Create a WVD Workspace
 * Create a WVD Hostpool
@@ -12,6 +12,7 @@ In this step, we will create a WVD Workspace, Hostpool & VMs within our Windows 
 We will perform these tasks by using the **Microsoft Azure Marketplace offering**.
 
 ## Find the Marketplace offer
+First, we will look for the new *Azure Portal* integrated **Windows Virtual Desktop service**, which is part of the Windows Virtual Desktop **Spring update**.
 
 1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
 
@@ -31,8 +32,7 @@ This is the overview you get in the Windows Virtual Desktop pane<br/>
 ![Add Workspace](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Add.png)
 
 3. Select the **wvd-workshop-sessionhosts-rg** Resource Group<br/>
-Fill in the Basics and click on **Next: Application groups >**<br/>
-<blockquote><p><strong>Note</strong><br>At this time, only US locations are available for the WVD ARM resources (Workspace, Hostpool, ApplicationGroup)</p></blockquote>
+Fill in the Basics and click on **Next: Application groups >**<br/><blockquote><p><strong>Note</strong><br>At this time, only US locations are available for the WVD ARM resources (Workspace, Hostpool, ApplicationGroup)</p></blockquote>
 ![Create Workspace - Basics](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Basics.png)
 
 4. At this time, we do not have any Application Groups, so we do not register any Application Groups yet.<br/>
@@ -40,6 +40,33 @@ Fill in the Basics and click on **Next: Application groups >**<br/>
 
 5. Finish the wizard and click on **Create**<br/>
 ![Create Workspace - Create](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Create.png)
+
+
+## Create a WVD Hostpool with VMs for Pooled usage
+
+<ol>
+    <li>
+        <p>
+            Click on <strong>Host Pools</strong>, and click on <strong>Add</strong><br/>
+            <img src="https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Create.png" alt="Create Hostpool - Create">
+        </p>
+    </li>
+    <li>
+        <p>
+            Select the <strong>wvd-workshop-sessionhosts-rg</strong> Resource Group<br/>
+            Fill in the Basics and click on <strong>Next: Application groups ></strong><br/>
+            <blockquote>
+                <p>
+                    <strong>Note</strong><br>
+                    At this time, only US locations are available for the WVD ARM resources (Workspace, Hostpool, ApplicationGroup)
+                </p>
+            </blockquote>
+            <img src="https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Basics.png" alt="Create Hostpool - Basics">
+        </p>
+    </li>
+<ol>
+
+
 
 Depending on how many VMs you’re creating, this process can take 30 minutes or more to complete.
 
