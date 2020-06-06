@@ -32,9 +32,7 @@ This is the overview you get in the Windows Virtual Desktop pane<br/>
 
 3. Select the **wvd-workshop-sessionhosts-rg** Resource Group<br/>
 Fill in the Basics and click on **Next: Application groups >**<br/>
- > **Note**<br/>
- > At this time, only US locations are available for the WVD ARM resources (Workspace, Hostpool, ApplicationGroup)
-&nbsp;&nbsp;<br/>
+<blockquote><p><strong>Note</strong><br>At this time, only US locations are available for the WVD ARM resources (Workspace, Hostpool, ApplicationGroup)</p></blockquote>
 ![Create Workspace - Basics](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Basics.png)
 
 4. At this time, we do not have any Application Groups, so we do not register any Application Groups yet.<br/>
