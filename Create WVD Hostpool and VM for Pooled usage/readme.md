@@ -11,7 +11,7 @@ In this step, we will create a WVD Workspace, Hostpool & VMs within our Windows 
 
 We will perform these tasks by using the **Microsoft Azure Marketplace offering**.
 
-## Find the Marketplace offer
+## Find the Windows Virtual Desktop Service
 First, we will look for the new *Azure Portal* integrated **Windows Virtual Desktop service**, which is part of the Windows Virtual Desktop **Spring update**.
 
 1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
@@ -62,7 +62,7 @@ Select **D4s v3** as *Virtual Machine size*<br/>
 Enter **2** as *Number of VMs*<br/>
 Enter **wvd-t-pool** as the *Name Prefix*<br/><br/>
 At the *Image* section, click on **Browse all images and disks**, Click on **My items** and select the Custom Image you have build: **MyCustomWVDManagedImage**<br/>
-If you did not complete Step 5, you could go for an Azure Marketplace Gallery image: select *Windows 10 Enterprise multi-session, Version 1909 + Office 365 ProPlus*<br/><br/>
+If you did not complete Step 3, you could go for an Azure Marketplace Gallery image: select *Windows 10 Enterprise multi-session, Version 1909 + Office 365 ProPlus*<br/><br/>
 At the *Network and security* section, select the **adVNET** and **adSubnet**<br/>
 At the *Administrator account* section, enter your local admin account. In my example, this is **MyAdminAccount@wvdworkshopt01.onmicrosoft.com** and the credentials.<br/><br/>
 Click on **Next: Workspace >**<br/>
@@ -71,7 +71,7 @@ The virtual machines will be called "wvd-t-pool-0," "wvd-t-pool-1," and so on
  > Think about the 15 char limit of NetBIOS<br/>
 ![Create Hostpool - VMs](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-VMs.png)
 
-4. Select **Yes** at the option *Register desktop app group**<br/>
+4. Select **Yes** at the option *Register desktop app group*<br/>
 Select the Workspace you created in the previous part: **wvd-workshop-win10-1909-ws**<br/>
 Click on **Review + create**<br/>
 ![Create Hostpool - Workspace](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-Workspace.png)
