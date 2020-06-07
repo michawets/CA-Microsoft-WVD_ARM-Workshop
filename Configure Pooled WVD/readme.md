@@ -56,6 +56,13 @@ This is the overview you get in the Windows Virtual Desktop pane<br/>
 
 4. Click on **Properties** and **Assignments** to get an view on all settings
 
+## Create a new RemoteApp application group
+
+1. Click on **Application Groups**
+
+2. Click on **Add**<br/>
+![Add Application Group](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateApplicationGroup.png)
+
 <script type="text/javascript">
     setTimeout(function() { 
             document.getElementById("sidebar").style.display = "none";
