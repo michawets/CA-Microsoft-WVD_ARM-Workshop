@@ -14,7 +14,7 @@ We will perform these tasks by using the **Microsoft ARM Template**.
 ## Deploy a new WVD Workspace using the ARM Template
 1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
 
-2. Open a new tab in your browser and goto [Micha Wets WVD Spring update Templates - Workspace](https://github.com/michawets/WVDTemplates/tree/master/Workplace)
+2. Open a new tab in your browser and goto [Micha Wets WVD Spring update Templates - Workspace](https://github.com/michawets/WVDTemplates/tree/master/Workspace)
 
 3. Click on **Deploy to Azure**<br/>
 ![Deploy to Azure](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Github-WVD-DeployWorkspace-DeployToAzure.png)
@@ -33,6 +33,19 @@ We will perform these tasks by using the **Microsoft ARM Template**.
  > It should only take a few seconds, but it must be complete before going to the next steps
 
 ## Deploy a new WVD Hostpool with VMs using the ARM Template
+
+1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
+
+2. Open a new tab in your browser and goto [Micha Wets WVD Spring update Templates - Hostpool](https://github.com/michawets/WVDTemplates/tree/master/Hostpool)
+
+3. Click on **Deploy to Azure**<br/>
+![Deploy to Azure](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Github-WVD-DeployHostpool-DeployToAzure.png)
+
+Administrator Account Username
+Administrator Account Password
+Vm Custom Image Source Id
+
+AzurePortal-WVD-DeployHostpool.png
 
 
 <script type="text/javascript">
