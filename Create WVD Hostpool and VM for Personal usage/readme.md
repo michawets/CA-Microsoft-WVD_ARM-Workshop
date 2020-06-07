@@ -1,14 +1,15 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create WVD Hostpool and VM for Personal usage from the ARM Template](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Personal%20usage/)
-# Create WVD Hostpool and VM for Personal usage from the ARM Template
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create WVD Workspace, Hostpool and VMs from the ARM Template](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Personal%20usage/)
+# Create WVD Workspace, Hostpool and VMs from the ARM Template
 
-In this step, we will create a host pool within our Windows Virtual Desktop tenant (created in step 4) for Personal usage. The tasks include:
+In this step, we will create a WVD Workspace, Hostpool & VMs within our Windows Virtual Desktop subscription for Pooled usage as we did in the previous step, but this time using the ARM Template. The task include:
 
-* Create a VM in the Azure subscription.
-* Join the VM to the Active Directory domain.
-* Create a host pool in Windows Virtual Desktop.
-* Register the VM with the Windows Virtual Desktop service.
+* Create a WVD Workspace
+* Create a WVD Hostpool
+* Create VMs in the Azure subscription.
+* Join the VMs to the Active Directory domain.
+* Register the VMs with the Windows Virtual Desktop service.
 
-We will perform these tasks by using the **Microsoft published GitHub ARM Template**. 
+We will perform these tasks by using the **Microsoft ARM Template**. 
 
 ## Deploy the ARM Template
 1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
