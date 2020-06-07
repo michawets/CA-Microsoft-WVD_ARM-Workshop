@@ -56,6 +56,9 @@ Check if all fields are correct. Normally, all default values should be ok, but 
  5. Check the *I agree to the terms and conditions stated above* checkbox
 
  6. Click on **Purchase**<br/>
+![Deploy Hostpool with VMs](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-DeployHostpool.png)
+
+Depending on how many VMs you’re creating, this process can take 15 minutes or more to complete.
 ![Deploy Hostpool with VMs](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-ARMdeployment.png)
 
 
