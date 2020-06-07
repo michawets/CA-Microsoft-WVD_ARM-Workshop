@@ -22,6 +22,9 @@ We will perform these tasks by using the **Microsoft ARM Template**.
 4. Complete the wizard:
  - Select the correct **Subscription**
  - Select **wvd-workshop-sessionhosts-rg** as *Resource group*
+Check if all fields are correct. Normally, all default values should be ok, but can be modified.<br/>
+ > **IMPORTANT**<br/>
+ > Remember the modified values for the next steps
 
  5. Check the *I agree to the terms and conditions stated above* checkbox
 
@@ -41,11 +44,17 @@ We will perform these tasks by using the **Microsoft ARM Template**.
 3. Click on **Deploy to Azure**<br/>
 ![Deploy to Azure](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Github-WVD-DeployHostpool-DeployToAzure.png)
 
-Administrator Account Username
-Administrator Account Password
-Vm Custom Image Source Id
+4. Complete the wizard:
+ - Select the correct **Subscription**
+ - Select **wvd-workshop-sessionhosts-rg** as *Resource group*
+ - Change the **Administrator Account Username** to your own.
+ - Change the **Administrator Account Password**
+ - Change the **Vm Custom Image Source Id** resource ID to match the Custom Image created in the step **Create custom WVD image**.
+ > **IMPORTANT**<br/>
+ > If you modified the default settings in the previous task (*Deploy a new WVD Workspace using the ARM Template*), than you have to change all modified values here as well
 
-AzurePortal-WVD-DeployHostpool.png
+![Deploy Hostpool with VMs](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-ARMdeployment.png)
+
 
 
 <script type="text/javascript">
