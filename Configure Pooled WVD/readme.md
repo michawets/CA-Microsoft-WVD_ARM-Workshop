@@ -63,6 +63,12 @@ This is the overview you get in the Windows Virtual Desktop pane<br/>
 2. Click on **Add**<br/>
 ![Add Application Group](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateApplicationGroup.png)
 
+3. Select the **wvd-workshop-sessionhosts-rg** Resource Group<br/>
+Fill in the Basics and click on **Next: Assignments >**<br/>
+![Application Group Basics](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateApplicationGroup-Basics.png)
+
+4. 
+
 <script type="text/javascript">
     setTimeout(function() { 
             document.getElementById("sidebar").style.display = "none";
