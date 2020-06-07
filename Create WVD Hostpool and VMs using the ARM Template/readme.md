@@ -11,43 +11,29 @@ In this step, we will create a WVD Workspace, Hostpool & VMs within our Windows 
 
 We will perform these tasks by using the **Microsoft ARM Template**. 
 
-## Deploy the ARM Template
+## Deploy a new WVD Workspace using the ARM Template
 1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
 
-
-2. Open a new tab in your browser and goto [GitHub WVD Templates](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool)
+2. Open a new tab in your browser and goto [Micha Wets WVD Spring update Templates - Workspace](https://github.com/michawets/WVDTemplates/tree/master/Workplace)
 
 3. Click on **Deploy to Azure**<br/>
-![Deploy to Azure](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/GitHub-WVD-DeployToAzure.png)
+![Deploy to Azure](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Github-WVD-DeployWorkspace-DeployToAzure.png)
 
 4. Complete the wizard:
  - Select the correct **Subscription**
  - Select **wvd-workshop-sessionhosts-rg** as *Resource group*
- - Select **CustomImage** as *Rdsh Image Source*
- - Enter your Azure Managed Image name as the *Rdsh Custom Image Source Name* name (my example: **MyCustomWVDManagedImage**)
- - Enter **wvd-workshop-infra-rg** as the *Rdsh Custom Image Source Resource Group* name
- - Enter **wvd-t-pers** as the *Rdsh Name Prefix* name
- - Enter **2** as the *Rdsh Number Of Instances*
- - *Rdsh VM Disk Type* = **Premium_LRS**
- - *Rdsh Vm Size* = **Standard_D4s_v3**
- - Enter your Windows Active Directory Name as *Domain To Join* from Step 2 (my example: **wvdworkshopt01.onmicrosoft.com**)
- - Enter your Local Admin UserPrincipalName as *Existing Domain UPN* from Step 2 (my example: **MyAdminAccount@wvdworkshopt01.onmicrosoft.com**)
- - Enter your Local Admin Password as *Existing Domain Password* (my example: #NiceTryAttendee)
- - Enter the VNET name you want to use for the WVD Sessionhosts as *Existing Vnet Name* (when using the Template deployed AD: **adVNET**)
- - Enter the subnet name you want to use for the WVD Sessionhosts as *Existing Subnet Name* (when using the Template deployed AD: **adSubnet**)
- - Enter the Resource Group name containing the VNET as *Virtual Network Resource Group Name* (my example: **wvd-workshop-infra-rg**)
- - Enter the WVD Tenant Name you created in Step 4 as *Existing Tenant Name* (my example: **WvdWorkshopT01**)
- - Enter the WVD Hostpool name you want to give to the Personal Hostpool as *Host Pool Name* (for example: **MyPersonalHostpool**)
- - Set the *Enable Persistent Desktop* to **true** to enable Personal Desktops
- - [Optional] Enter the demousers you want to enable for Personal Desktops as *Default Desktop Users* (comma seperated)
- - Enter your Tenant Creator User UPN as *Tenant Admin Upn Or Application Id* from Step 1 (my example: **admin@wvdworkshopt01.onmicrosoft.com**)
- - Enter your Tenant Creator User Password ad *Tenant Admin Password* from Step 1 (my example: #NotAChance)
 
  5. Check the *I agree to the terms and conditions stated above* checkbox
 
  6. Click on **Purchase**
+ ![Deploy Workspace](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-DeployWorkspace.png)
 
-Depending on how many VMs you’re creating, this process can take 30 minutes or more to complete.
+ > **IMPORTANT**<br/>
+ > Wait until the deployment is finished before continuing<br/>
+ > It should only take a few seconds, but it must be complete before going to the next steps
+
+## Deploy a new WVD Hostpool with VMs using the ARM Template
+
 
 <script type="text/javascript">
     setTimeout(function() { 
