@@ -28,7 +28,7 @@ Check if all fields are correct. Normally, all default values should be ok, but 
 
  5. Check the *I agree to the terms and conditions stated above* checkbox
 
- 6. Click on **Purchase**
+ 6. Click on **Purchase**<br/>
  ![Deploy Workspace](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-DeployWorkspace.png)
 
  > **IMPORTANT**<br/>
@@ -53,6 +53,9 @@ Check if all fields are correct. Normally, all default values should be ok, but 
  > **IMPORTANT**<br/>
  > If you modified the default settings in the previous task (*Deploy a new WVD Workspace using the ARM Template*), than you have to change all modified values here as well
 
+ 5. Check the *I agree to the terms and conditions stated above* checkbox
+
+ 6. Click on **Purchase**<br/>
 ![Deploy Hostpool with VMs](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-ARMdeployment.png)
 
 
