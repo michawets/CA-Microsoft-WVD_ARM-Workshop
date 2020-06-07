@@ -14,6 +14,7 @@ We will perform these tasks by using the **Microsoft ARM Template**.
 ## Deploy the ARM Template
 1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
 
+
 2. Open a new tab in your browser and goto [GitHub WVD Templates](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool)
 
 3. Click on **Deploy to Azure**<br/>

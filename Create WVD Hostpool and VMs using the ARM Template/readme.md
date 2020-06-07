@@ -1,7 +1,7 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create WVD Workspace, Hostpool and VMs from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage/)
-# Create WVD Workspace, Hostpool and VMs from the Azure Marketplace
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Create WVD Workspace, Hostpool and VMs from the ARM Template](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VMs%20using%20the%20ARM%20Template/)
+# Create WVD Workspace, Hostpool and VMs from the ARM Template
 
-In this step, we will create a WVD Workspace, Hostpool & VMs within our Windows Virtual Desktop subscription for Pooled usage. The task include:
+In this step, we will create a WVD Workspace, Hostpool & VMs within our Windows Virtual Desktop subscription for Pooled usage as we did in the previous step, but this time using the ARM Template. The task include:
 
 * Create a WVD Workspace
 * Create a WVD Hostpool
@@ -9,80 +9,45 @@ In this step, we will create a WVD Workspace, Hostpool & VMs within our Windows 
 * Join the VMs to the Active Directory domain.
 * Register the VMs with the Windows Virtual Desktop service.
 
-We will perform these tasks by using the **Microsoft Azure Marketplace offering**.
+We will perform these tasks by using the **Microsoft ARM Template**. 
 
-## Find the Windows Virtual Desktop Service
-First, we will look for the new *Azure Portal* integrated **Windows Virtual Desktop service**, which is part of the Windows Virtual Desktop **Spring update**.
-
+## Deploy the ARM Template
 1. Sign in on the [Azure Portal](https://portal.azure.com) with your credentials.
 
-2. Search for **Windows Virtual Desktop**<br/>
-![Search for WVD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-SearchWindowsVirtualDesktop.png)
 
-This is the overview you get in the Windows Virtual Desktop pane<br/>
-![WVD pane](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-SearchWindowsVirtualDesktop-Overview.png)
+2. Open a new tab in your browser and goto [GitHub WVD Templates](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool)
 
+3. Click on **Deploy to Azure**<br/>
+![Deploy to Azure](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/GitHub-WVD-DeployToAzure.png)
 
-## Create a WVD Workspace
+4. Complete the wizard:
+ - Select the correct **Subscription**
+ - Select **wvd-workshop-sessionhosts-rg** as *Resource group*
+ - Select **CustomImage** as *Rdsh Image Source*
+ - Enter your Azure Managed Image name as the *Rdsh Custom Image Source Name* name (my example: **MyCustomWVDManagedImage**)
+ - Enter **wvd-workshop-infra-rg** as the *Rdsh Custom Image Source Resource Group* name
+ - Enter **wvd-t-pers** as the *Rdsh Name Prefix* name
+ - Enter **2** as the *Rdsh Number Of Instances*
+ - *Rdsh VM Disk Type* = **Premium_LRS**
+ - *Rdsh Vm Size* = **Standard_D4s_v3**
+ - Enter your Windows Active Directory Name as *Domain To Join* from Step 2 (my example: **wvdworkshopt01.onmicrosoft.com**)
+ - Enter your Local Admin UserPrincipalName as *Existing Domain UPN* from Step 2 (my example: **MyAdminAccount@wvdworkshopt01.onmicrosoft.com**)
+ - Enter your Local Admin Password as *Existing Domain Password* (my example: #NiceTryAttendee)
+ - Enter the VNET name you want to use for the WVD Sessionhosts as *Existing Vnet Name* (when using the Template deployed AD: **adVNET**)
+ - Enter the subnet name you want to use for the WVD Sessionhosts as *Existing Subnet Name* (when using the Template deployed AD: **adSubnet**)
+ - Enter the Resource Group name containing the VNET as *Virtual Network Resource Group Name* (my example: **wvd-workshop-infra-rg**)
+ - Enter the WVD Tenant Name you created in Step 4 as *Existing Tenant Name* (my example: **WvdWorkshopT01**)
+ - Enter the WVD Hostpool name you want to give to the Personal Hostpool as *Host Pool Name* (for example: **MyPersonalHostpool**)
+ - Set the *Enable Persistent Desktop* to **true** to enable Personal Desktops
+ - [Optional] Enter the demousers you want to enable for Personal Desktops as *Default Desktop Users* (comma seperated)
+ - Enter your Tenant Creator User UPN as *Tenant Admin Upn Or Application Id* from Step 1 (my example: **admin@wvdworkshopt01.onmicrosoft.com**)
+ - Enter your Tenant Creator User Password ad *Tenant Admin Password* from Step 1 (my example: #NotAChance)
 
-1. Click on **Workspaces**<br/>
-![Open Workspaces](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace.png)
+ 5. Check the *I agree to the terms and conditions stated above* checkbox
 
-2. Click on **Add**<br/>
-![Add Workspace](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Add.png)
+ 6. Click on **Purchase**
 
-3. Select the **wvd-workshop-sessionhosts-rg** Resource Group<br/>
-Fill in the Basics and click on **Next: Application groups >**<br/>
- > **Note**<br>
- > At this time, only US locations are available for the WVD ARM resources (Workspace, Hostpool, ApplicationGroup)<br/>
-![Create Workspace - Basics](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Basics.png)
-
-4. At this time, we do not have any Application Groups, so we do not register any Application Groups yet.<br/>
-![Create Workspace - ApplicationGroups](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-ApplicationGroups.png)
-
-5. Finish the wizard and click on **Create**<br/>
-![Create Workspace - Create](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateWorkspace-Create.png)
-
-
-## Create a WVD Hostpool with VMs for Pooled usage
-
-1. Click on **Host Pools**, and click on **Add**<br/>
-![Create Hostpool - Add](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool.png)
-
-2. Select the **wvd-workshop-sessionhosts-rg** Resource Group<br/>
-Fill in the Basics and click on **Next: Virtual Machines >**<br/>
- > **Note**<br>
- > At this time, only US locations are available for the WVD ARM resources (Workspace, Hostpool, ApplicationGroup)<br/>
-![Create Hostpool - Basics](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-Basics.png)
-
-3. Select **Yes** at the option *Add virtual machines* <br/>
-Select the **wvd-workshop-sessionhosts-rg** resource group<br/>
-Select **West Europe** as the *Virtual Machine location*<br/>
-Select **D4s v3** as *Virtual Machine size*<br/>
-Enter **2** as *Number of VMs*<br/>
-Enter **wvd-t-pool** as the *Name Prefix*<br/><br/>
-At the *Image* section, click on **Browse all images and disks**, Click on **My items** and select the Custom Image you have build: **MyCustomWVDManagedImage**<br/>
-If you did not complete Step 3, you could go for an Azure Marketplace Gallery image: select *Windows 10 Enterprise multi-session, Version 1909 + Office 365 ProPlus*<br/><br/>
-At the *Network and security* section, select the **adVNET** and **adSubnet**<br/>
-At the *Administrator account* section, enter your local admin account. In my example, this is **MyAdminAccount@wvdworkshopt01.onmicrosoft.com** and the credentials.<br/><br/>
-Click on **Next: Workspace >**<br/>
-The virtual machines will be called "wvd-t-pool-0," "wvd-t-pool-1," and so on
- > **IMPORTANT**<br/>
- > Think about the 15 char limit of NetBIOS<br/>
-![Create Hostpool - VMs](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-VMs.png)
-
-4. Select **Yes** at the option *Register desktop app group*<br/>
-Select the Workspace you created in the previous part: **wvd-workshop-win10-1909-ws**<br/>
-Click on **Review + create**<br/>
-![Create Hostpool - Workspace](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-Workspace.png)
-
-5. Review the overview and click on **Create**<br/>
-![Create Hostpool - Overview](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-Create.png)
-
-
-Depending on how many VMs you’re creating, this process can take 15 minutes or more to complete.
-![Create Hostpool - Deployment](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-deployment.png)
-
+Depending on how many VMs you’re creating, this process can take 30 minutes or more to complete.
 
 <script type="text/javascript">
     setTimeout(function() { 
