@@ -151,6 +151,8 @@ You can run the following *Powershell script* in a Powershell console (as Admini
 For example: <br/>
 WVDWorkshopFullDesktopUsers<br/>
 WVDWorkshopRemoteAppUsers<br/>
+Assign "demouser001","demouser003","demouser004","demouser005","demouser006" to the *WVDWorkshopFullDesktopUsers* group<br/>
+Assign "demouser002","demouser007","demouser008","demouser009","demouser010" to the *WVDWorkshopRemoteAppUsers* group<br/>
 You can run the following *Powershell script* in a Powershell console (as Administrator)<br/>
 ```powershell
     $ErrorActionPreference = "Stop"
