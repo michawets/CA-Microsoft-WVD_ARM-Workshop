@@ -21,7 +21,7 @@ We will perform these tasks by using the **Microsoft ARM Template**.
 
 4. Complete the wizard:
  - Select the correct **Subscription**
- - Select **wvd-workshop-sessionhosts-rg** as *Resource group*
+ - Select **wvd-workshop-sessionhosts-rg** as *Resource group*<br/>
 Check if all fields are correct. Normally, all default values should be ok, but can be modified.<br/>
  > **IMPORTANT**<br/>
  > Remember the modified values for the next steps
@@ -49,7 +49,7 @@ Check if all fields are correct. Normally, all default values should be ok, but 
  - Select **wvd-workshop-sessionhosts-rg** as *Resource group*
  - Change the **Administrator Account Username** to your own.
  - Change the **Administrator Account Password**
- - Change the **Vm Custom Image Source Id** resource ID to match the Custom Image created in the step **Create custom WVD image**.
+ - Change the **Vm Custom Image Source Id** resource ID to match the Custom Image created in the step **Create custom WVD image**.<br/>
  > **IMPORTANT**<br/>
  > If you modified the default settings in the previous task (*Deploy a new WVD Workspace using the ARM Template*), than you have to change all modified values here as well
 
