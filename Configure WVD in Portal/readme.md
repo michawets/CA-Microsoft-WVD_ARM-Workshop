@@ -67,7 +67,28 @@ This is the overview you get in the Windows Virtual Desktop pane<br/>
 Fill in the Basics and click on **Next: Assignments >**<br/>
 ![Application Group Basics](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateApplicationGroup-Basics.png)
 
-4. 
+4. Click on **+ Add Azure AD users or user groups**<br/>
+Search for our RAP group *WVDWorkshopRemoteAppUsers*<br/>
+Select the group from the list and click on **Select**<br/>
+Click on **Next: Applications >**<br/>
+![Application Group Assignments - Add Users/Groups](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateApplicationGroup-Assignments-1.png)
+
+5. Click on **+ Add applications**<br/>
+Select **Acrobat Reader DC** from the list<br/>
+You can change the Display name if you like<br/>
+Click on **Save**<br/>
+If you want to add more applications, just repeat these steps<br/>
+Click on **Next: Workspace >**<br/>
+![Application Group Assignments - Add applications](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateApplicationGroup-Applications.png)
+
+6. Select **Yes** at the option *Register application group* to publish the application group to the users<br/>
+You will not be able to change the *Workspace*, as we already have an Application Group in the 1909 Hostpool, registered to a Workspace.<br/>
+Therefor, this new Application Group will be registered to the same workspace<br/>
+Click on **Review + create**<br/>
+![Application Group Assignments - Workspace](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateApplicationGroup-Workspace.png)
+
+7. Review the settings we configured and click on **Create**<br/>
+![Application Group Assignments - Create](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateApplicationGroup-Create.png)
 
 <script type="text/javascript">
     setTimeout(function() { 
