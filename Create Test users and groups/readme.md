@@ -5,6 +5,9 @@ In this step, you will
 * Create users and groups
 * Test synchronisation from Windows AD to Azure AD
 
+ > **IMPORTANT**<br/>
+ > If this is not a new Azure AD Tenant/Subscription/Windows AD, please make sure that you do not remove/overwrite existing useraccounts or groups
+
 ## Create users and groups
 
 1. Create at least 10 new users & 5 admin users in the Windows AD:<br/>
