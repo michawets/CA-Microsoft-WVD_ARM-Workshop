@@ -9,12 +9,12 @@ Before you begin, you have to determine the Azure AD Tenant & Windows AD setup f
  - **Scenario A)** is that you have a new or empty Azure AD Tenant, with an empty Azure Subscription, **without any pre-configured AD Connect** (Recommended)
  - **Scenario B)** is that you have an existing Azure AD Tenant, with a existing Azure Subscription & already have Azure AD Connect enabled. (Azure AD Domain services is not covered in this workshop but possible)
 
- > **IMPORTANT**
- > Please do not perform these steps in a Production environment. An Test environment is really recommended.
+ > **IMPORTANT**<br/>
+ > Please do not perform these steps in a Production environment. An Test environment is really recommended.<br/>
  > If you have to run this workshop in a Production environment, make sure not to remove or overwrite any existing objects in your environment.
 
- > **IMPORTANT**
- > If you share an Azure AD Tenant & Subscription with multiple Workshop attendees, make sure only 1 of you perform the PreReq tasks
+ > **IMPORTANT**<br/>
+ > If you share an Azure AD Tenant & Subscription with multiple Workshop attendees, make sure only 1 of you perform the PreReq tasks<br/>
  > The others need to wait until the PreReqs are completed before proceeding.
 
 ## PreRequisite Tasks
