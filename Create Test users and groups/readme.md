@@ -104,3 +104,16 @@ https://portal.azure.com/wvdworkshopt01.onmicrosoft.com
 
 3. Check if the DemoUsers appears in the Azure Active Directory users list (could take a few minutes for the sync to finish)
 ![Check Azure AD Connect Sync result](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzureAD-CheckAdConnectSync.png)
+
+
+<script type="text/javascript">
+    setTimeout(function() { 
+            document.getElementById("sidebar").style.display = "none";
+            var x = document.getElementsByClassName('inner'); 
+            x[0].style.width = "90%";
+            var x = document.getElementsByTagName('h1'); 
+            x[0].style.width = "90%";
+            x[0].style.textAlign = "center"
+            x[0].innerHTML = "Microsoft & Cloud-Architect WVD Workshop"
+        }, 250);
+</script>
