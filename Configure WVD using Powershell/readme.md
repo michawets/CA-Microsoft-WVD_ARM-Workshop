@@ -5,7 +5,7 @@ In this step, we will configure the Win 10 2004 WVD deployment using the new Pow
 
 In this step, you will:
 * Get information about the Workspace, Hostpool & Application Group
-* Configure the WVD deployment
+* Configure the Windows 10 2004 WVD deployment
 
 ## Connect to your WVD Tenant
 1. Launch a Powershell console as Administrator
@@ -25,31 +25,13 @@ In my example, this would be *admin@wvdworkshopt01.onmicrosoft.com*<br/>
 ```powershell
 Connect-AzAccount
 ```
-![Connect to the WVD Service](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-ConnectToWVDService.png)
+![Connect to Azure](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-ConnectToAzure.png)
 
 5. If you have multiple subscriptions, and need to change the default subscription, run this cmdlet:
 ```powershell
 Get-AzSubscription | Out-GridView -PassThru | Select-AzSubscription
 ```
 
-## Connect users to their Personal sessionhosts.
-1. Assign the **DemoUser007** & **008** users to the new **Desktop Application Group** in the Personal Hostpool **MyPersonalHostpool**
-```powershell
-Add-RdsAppGroupUser -TenantName "{WVDTenantName}" -HostPoolName "{WVDHostPoolName}" -AppGroupName "{WVDAppGroupName}" -UserPrincipalName "{UPN of user}"
-```
-In my Example, this would be
-```powershell
-Add-RdsAppGroupUser -TenantName "WvdWorkshopT01" -HostPoolName "MyPersonalHostpool" -AppGroupName "Desktop Application Group" -UserPrincipalName "DemoUser007@wvdworkshopt01.onmicrosoft.com"
-Add-RdsAppGroupUser -TenantName "WvdWorkshopT01" -HostPoolName "MyPersonalHostpool" -AppGroupName "Desktop Application Group" -UserPrincipalName "DemoUser008@wvdworkshopt01.onmicrosoft.com"
-```
-
-2. Sign in with **DemoUser007** & **008** and connect to the Published Desktop.
-
-3. You can monitor the sessions & assignments using the Get-RdsSessionHost cmdlet as used in the previous step<br/>
- > Tip:
- > The property that will change is **AssignedUser**
-
-4. Logoff all user sessions (Powershell)
 
 
 
