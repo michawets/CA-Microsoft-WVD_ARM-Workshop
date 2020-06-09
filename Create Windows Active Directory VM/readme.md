@@ -95,10 +95,10 @@ Check to agree with the License terms and click on **Continue**
 Check **Continue without matching all UPN suffixes to verified domains** and click on **Next**<br/>
 ![Config Azure AD Signin configuration](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/ADConnect-AzureADSigninConfig.png)
 
-9. Click on **Install** to start the installation of the Sync Engine & configuration
+9. Click on **Install** to start the installation of the Sync Engine & configuration<br/>
 ![Start Sync engine installation](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/ADConnect-StartInstallation.png)
 
-10. Click on **Exit** to finish the installation
+10. Click on **Exit** to finish the installation<br/>
 ![Finish Config](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/ADconnect-ConfigComplete.png)
 <br/>
 <br/>
