@@ -30,7 +30,8 @@ Before you begin, you have to determine the Azure AD Tenant & Windows AD setup f
 
 ## Windows Virtual Desktop Tasks
 If you are working alone, you can use the Resource Group names as stated in the workshop.<br/>
-If you are sharing an Azure AD Tenant, subscription and Windows AD, keep in mind that each attendee needs its own Resource Groups.
+If you are sharing an Azure AD Tenant, subscription and Windows AD, keep in mind that each attendee needs its own Resource Groups.<br/>
+The test accounts can be shared for all attendees!<br/>
 
 1. [Create custom WVD image](/CA-Microsoft-WVD_ARM-Workshop/Create%20custom%20WVD%20image)
 2. [Create WVD Workspace, Hostpool and VMs from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage)
