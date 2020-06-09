@@ -6,8 +6,8 @@ In this step, we will configure the Pooled WVD deployment in the Azure Portal.
 
 In this step, you will learn how to:
 * Get information about your WVD Workspace, Hostpools, Application Groups, etc
+* Assign users to the RemoteDesktop application group
 * Create a new RemoteApp application group
-* Assign users to the application group
 * Publish application(s) to the application group
 * Configure Load-balancing mechanisms on the Hostpool
 * Configure Single- or Multi-session on the Hostpool
@@ -55,6 +55,17 @@ This is the overview you get in the Windows Virtual Desktop pane<br/>
 ![Application Group overview](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-ReviewApplicationGroupSettings.png)
 
 4. Click on **Properties** and **Assignments** to get an view on all settings
+
+## Assign users to the RemoteDesktop application group
+
+//TODO
+//TODO
+//TODO
+//TODO
+//TODO
+//TODO
+//TODO
+//TODO
 
 ## Create a new RemoteApp application group
 
