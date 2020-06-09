@@ -21,13 +21,13 @@ In this workshop, we will use AD Connect on a Azure VM running the Windows Activ
 Click on **Add**<br/>
 ![Add Resource in Resource Group](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-ResourceGroup-AddResource.png)
 
-4. Search for **Template Deployment** and select the option **Template Deployment (deploy using custom templates)**
+4. Search for **Template Deployment** and select the option **Template Deployment (deploy using custom templates)**<br/>
 ![Search Marketplace for Template Deployment](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Marketplace-SearchForTemplateDeployment.png)
 
-5. Click on **Create** to confirm
+5. Click on **Create** to confirm<br/>
 ![Search Marketplace for Template Deployment](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Marketplace-SearchForTemplateDeployment-Create.png)
 
-6. Under **Load a GitHub quickstart template**, search for the template **active-directory-new-domain**
+6. Under **Load a GitHub quickstart template**, search for the template **active-directory-new-domain**<br/>
 ![Search GitHub for AD Deployment](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Marketplace-SearchForADDeployment.png)
 Click on **Select template**<br/>
 ![Search GitHub for AD Deployment](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-Marketplace-SearchForADDeployment-Select.png)
@@ -47,7 +47,7 @@ The **Basics** should already be completed due to the fact we started from the R
 
 ## Config Azure AD Connect
 
-1. When the Deployment is finished, you go to the Resource Group and open the **adVM**
+1. When the Deployment is finished, you go to the Resource Group and open the **adVM**<br/>
 ![Open AD VM](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-GoToAdVM.png)
 
 2. Connect to the Azure VM using the **Connect** button, or by using the **DNS name** in MSTSC.EXE<br/>
@@ -78,17 +78,17 @@ Disable-IEESC
 https://www.microsoft.com/en-us/download/confirmation.aspx?id=47594
 ```
 
-4. After the automatic installer, the **Azure AD Connect wizard** should start.
-Check to agree with the License terms and click on **Continue**
+4. After the automatic installer, the **Azure AD Connect wizard** should start.<br/>
+Check to agree with the License terms and click on **Continue**<br/>
 ![Agree the Terms](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/ADConnect-AgreeTerms.png)
 
-5. Because we will use a basic deployment, we can use the **Express Settings**
+5. Because we will use a basic deployment, we can use the **Express Settings**<br/>
 ![Use Express Settings](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/ADConnect-UseExpressSettings.png)
 
-6. Enter your **Azure** AD Admin Account (admin@{tenant} for example) credentials and click on **Next**
+6. Enter your **Azure** AD Admin Account (admin@{tenant} for example) credentials and click on **Next**<br/>
 ![Connect to Azure AD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/ADConnect-ConnectToAzureAD.png)
 
-7. Enter your **Windows** AD Admin Account (Created using the ARM Template & used to connect to the adVM)
+7. Enter your **Windows** AD Admin Account (Created using the ARM Template & used to connect to the adVM)<br/>
 ![Connect to Windows AD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/ADConnect-ConnectToWindowsAD.png)
 
 8. Again, for simplicity, we will use the .onmicrosoft.com suffix (not a custom domain).<br/>
