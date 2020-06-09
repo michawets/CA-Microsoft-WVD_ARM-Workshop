@@ -1,4 +1,4 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Configure Pooled WVD](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Pooled%20WVD)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Configure Pooled WVD](/CA-Microsoft-WVD_ARM-Workshop/Configure%20WVD%20in%20Portal)
 # Configure Pooled WVD in the Azure Portal
 
 In this step, we will configure the Pooled WVD deployment in the Azure Portal.
