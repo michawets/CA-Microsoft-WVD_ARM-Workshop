@@ -58,14 +58,14 @@ This is the overview you get in the Windows Virtual Desktop pane<br/>
 
 ## Assign users to the RemoteDesktop application group
 
-//TODO
-//TODO
-//TODO
-//TODO
-//TODO
-//TODO
-//TODO
-//TODO
+//TODO<br/>
+//TODO<br/>
+//TODO<br/>
+//TODO<br/>
+//TODO<br/>
+//TODO<br/>
+//TODO<br/>
+//TODO<br/>
 
 ## Create a new RemoteApp application group
 
