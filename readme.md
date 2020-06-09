@@ -6,7 +6,7 @@ If you have any questions, just ask **Micha** or **Bart** for further assistance
 ## Considerations
 
 Before you begin, you have to determine the Azure AD Tenant & Windows AD setup for this lab.<br/>
- - **Scenario A)** is that you have a new or empty Azure AD Tenant, with an Azure Subscription attached (Recommended)
+ - **Scenario A)** is that you have a new or empty Azure AD Tenant, with an empty Azure Subscription, **without any pre-configured AD Connect** (Recommended)
  - **Scenario B)** is that you have an existing Azure AD Tenant, with a existing Azure Subscription & already have Azure AD Connect enabled. (Azure AD Domain services is not covered in this workshop but possible)
 
  > **IMPORTANT**

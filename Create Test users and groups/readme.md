@@ -34,13 +34,13 @@ You can run the following *Powershell script* in a Powershell console (as Admini
     foreach ($i in $count) {
         $sam = ("{0}{1:D3}" -f $username, $i)
         New-AdUser -Name $sam -Path $path -Enabled $True -ChangePasswordAtLogon $false  `
-            -AccountPassword (ConvertTo-SecureString "Micha&BartForProctorsOfTheYear2019" -AsPlainText -force) -PasswordNeverExpires $true -PassThru
+            -AccountPassword (ConvertTo-SecureString "Micha&BartForProctorsOfTheYear2020" -AsPlainText -force) -PasswordNeverExpires $true -PassThru
     }
     $count=1..5
     foreach ($i in $count) {
         $sam = ("{0}{1:D3}" -f $adminname, $i)
         New-AdUser -Name $sam -Path $path -Enabled $True -ChangePasswordAtLogon $false  `
-            -AccountPassword (ConvertTo-SecureString "Micha&BartForProctorsOfTheYear2019" -AsPlainText -force) -PasswordNeverExpires $true  -PassThru
+            -AccountPassword (ConvertTo-SecureString "Micha&BartForProctorsOfTheYear2020" -AsPlainText -force) -PasswordNeverExpires $true  -PassThru
     }
     $domainAdminGroup = Get-ADGroup "Domain Admins"
     $domainAdminGroup | Add-ADGroupMember -Members (Get-ADUser -Filter "name -like 'adminuser*'")
