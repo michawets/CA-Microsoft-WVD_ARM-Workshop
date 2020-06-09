@@ -5,7 +5,7 @@ In this step, you will
 * Deploy a new VM using the **Template Deployment** from the Marketplace
 * Connect the **Windows Active Directory** to **Azure Active Directory** using **Azure AD Connect**
 
-You could use [**Azure Active Directory Domain Services**](https://azure.microsoft.com/en-us/services/active-directory-ds/), but this will not be covered in this workshop. If it is already enabled, you can skip this step. You should however **create the test accounts** in the last section of this step.<br/>
+You could use [**Azure Active Directory Domain Services**](https://azure.microsoft.com/en-us/services/active-directory-ds/), but this will not be covered in this workshop. If it is already enabled, you can skip this step.<br/>
 <br/>
 In this workshop, we will use AD Connect on a Azure VM running the Windows Active Directory role (for better understanding of the setup & to keep costs lower).
 
@@ -85,7 +85,7 @@ Check to agree with the License terms and click on **Continue**
 5. Because we will use a basic deployment, we can use the **Express Settings**
 ![Use Express Settings](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/ADConnect-UseExpressSettings.png)
 
-6. Enter your **Azure** AD Admin Account (admin@{tenant} created in Step 1) credentials and click on **Next**
+6. Enter your **Azure** AD Admin Account (admin@{tenant} for example) credentials and click on **Next**
 ![Connect to Azure AD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/ADConnect-ConnectToAzureAD.png)
 
 7. Enter your **Windows** AD Admin Account (Created using the ARM Template & used to connect to the adVM)
