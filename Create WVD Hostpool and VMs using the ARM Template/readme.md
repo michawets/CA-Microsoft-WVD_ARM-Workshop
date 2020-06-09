@@ -49,7 +49,6 @@ Check if all fields are correct. Normally, all default values should be ok, but 
  - Select **wvd-workshop-sessionhosts-rg** as *Resource group*
  - Change the **Administrator Account Username** to your own.
  - Change the **Administrator Account Password**
- - Change the **Vm Custom Image Source Id** resource ID to match the Custom Image created in the step **Create custom WVD image**.<br/>
  > **IMPORTANT**<br/>
  > If you modified the default settings in the previous task (*Deploy a new WVD Workspace using the ARM Template*), than you have to change all modified values here as well
 
