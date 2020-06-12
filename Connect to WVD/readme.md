@@ -67,7 +67,8 @@ The WVD webclient let you access your WVD resources from a web browser without i
 * Google Chrome (Windows, macOS, Linux, Chrome OS)
 
 2. Navigate to the [Windows Virtual Desktop web client](https://rdweb.wvd.microsoft.com/arm/webclient)<br/>
- > Notice that the Spring update has a different URL compared to the Fall edition:<br/>
+ > **Notice**
+ > The Spring update has a different URL compared to the Fall edition:<br/>
  > Fall Edition = *https://rdweb.wvd.microsoft.com/webclient*<br/>
  > Spring Edition = *https://rdweb.wvd.microsoft.com/**arm**/webclient*
 
