@@ -126,7 +126,7 @@ Go to the Hostpool, click on **Session hosts** and monitor the session by clicki
 
 2. Logoff all user sessions<br/>
 This can be done in the portal:<br/>
-Go to the Hostpool, click on **Session hosts**, click on *each Sessionhost* in the list and click on **Log off all active users**
+Go to the Hostpool, click on **Session hosts**, click on *each Sessionhost* in the list and click on **Log off all active users**<br/>
 ![Logoff Sessions](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-LogoffSessions.png)
 
 3. Validate that all *Active Sessions* on all Sessionhosts are back to 0
