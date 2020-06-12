@@ -43,6 +43,9 @@ The test accounts can be shared for all attendees!<br/>
 8. [Configure Security - RBAC & MFA](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Security%20-%20RBAC%20%26%20MFA)
 9. [Install IGEL OS on Hyper-V](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
 
+
+![Footer](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Footer.png)
+
 <script type="text/javascript">
     setTimeout(function() { 
             document.getElementById("sidebar").style.display = "none";
