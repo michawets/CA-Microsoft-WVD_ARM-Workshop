@@ -19,7 +19,7 @@ In this step, you will:
 4. Enter **adVM_DataDisk-FSLogix** as diskname, change the size to **128GB Premium SSD** & click on **Create**<br/>
 ![Create managed disk](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-VirtualMachine-CreateManagedDisk.png)
 
-5. Change the Host Caching to **None** and click on **Save**
+5. Change the Host Caching to **None** and click on **Save**<br/>
 ![Save managed disk](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-VirtualMachine-SaveDataDisk.png)
 
 6. RDP to your DC (See Step 2 how to connect)
