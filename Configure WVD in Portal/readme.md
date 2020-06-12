@@ -153,7 +153,7 @@ Change the *Load balancing algorithm* to **Depth-First** and click on **Save**<b
 Click on the Hostpool **wvd-workshop-win10-1909-hp**<br/>
 Click on **Properties**<br/>
 Click on **RDP Settings**<br/>
-Change some settings, for example *Disk Drives* and *Audio Input* and click on **Save**
+Change some settings, for example *Disk Drives* and *Audio Input* and click on **Save**<br/>
 ![AzurePortal-WVD-ChangeRDPSettings](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-ChangeRDPSettings.png)
 
 2. Connect with DemoUser001 and check if you have all your local drives mapped in the WVD Session
