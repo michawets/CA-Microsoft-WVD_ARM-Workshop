@@ -58,6 +58,14 @@ This is the overview you get in the Windows Virtual Desktop pane<br/>
 
 ## Assign users to the RemoteDesktop application group
 
+1. Click on **Application Groups**<br/>
+Click on the AppGroup **wvd-workshop-win10-1909-hp-DAG**<br/>
+Click on **Assignments**<br/>
+Click on **Add**<br/>
+Type in **WVDWorkshop**<br/>
+Select the **WVDWorkshopFullDesktopUsers** from the list<br/>
+Click on **Select**<br/>
+![Assign group to Application Group](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-ChangeApplicationGroup-Assignments.png)
 //TODO<br/>
 //TODO<br/>
 //TODO<br/>
