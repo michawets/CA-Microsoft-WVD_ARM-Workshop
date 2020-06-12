@@ -4,6 +4,7 @@
 There are multiple possibilities to connect to Windows Virtual Desktop: 
 * using the **Windows Virtual Desktop Client** 
 * using a **web browser** and the HTML5 webclient
+* using Igel OS (last step in the workshop)
 * using the **mobile app** on Android/IOS (not covered in the Workshop)
 
 In this step, you will see how to connect to the WVD deployment you created & configured in the previous steps
@@ -16,6 +17,23 @@ In this step, you will see how to connect to the WVD deployment you created & co
 
 2. Install the WVD client on your PC
 
+3. To be able to work with the WVD Spring 2020 edition without the Fall 2019 Consent steps, you need the *Insider* build of the WVD Client.<br/>
+To get this version, Launch a Powershell console as Administrator an run this script:
+```powershell
+if ($null -eq (Get-Item -Path "HKLM:\SOFTWARE\Microsoft\MSRDC" -ErrorAction SilentlyContinue)) {
+    New-Item -Path "HKLM:\SOFTWARE\Microsoft" -Name "MSRDC" -Force
+}
+if ($null -eq (Get-Item -Path "HKLM:\SOFTWARE\Microsoft\MSRDC\Policies" -ErrorAction SilentlyContinue)) {
+    New-Item -Path "HKLM:\SOFTWARE\Microsoft\MSRDC" -Name "Policies" -Force
+}
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\MSRDC\Policies" -Name "ReleaseRing" -Value "insider" -Force
+```
+
+4. Restart the WVD client (if opened). <br/>
+You should get a notification that there is a new version available.<br/>
+Install the latest version
+
+
 ### Subscribe to the WVD Feed
 
 1. Start the WVD client from the **Start Menu**, look for **Remote Desktop**
@@ -27,7 +45,7 @@ Sign in with one of the **DemoUser** accounts (created in Step 2) when prompted.
 
 After successfully authenticating, you should now see a list of resources available to that user:
 * DemoUser001: Full Desktop
-* DemoUser002: Excel & MSPaint
+* DemoUser002: Acrobat or other apps
 
 You can launch resources by one of these methods.
 
@@ -48,7 +66,10 @@ The WVD webclient let you access your WVD resources from a web browser without i
 * Mozilla Firefox (Windows, macOS, Linux) (v55 or higher)
 * Google Chrome (Windows, macOS, Linux, Chrome OS)
 
-2. Navigate to the [Windows Virtual Desktop web client](https://rdweb.wvd.microsoft.com/webclient)
+2. Navigate to the [Windows Virtual Desktop web client](https://rdweb.wvd.microsoft.com/arm/webclient)<br/>
+Notice that the Spring update has a different URL compared to the Fall edition:<br/>
+Fall Edition = *https://rdweb.wvd.microsoft.com/webclient*<br/>
+Spring Edition = *https://rdweb.wvd.microsoft.com/**arm**/webclient*
 
 3. Sign in with one of the **DemoUser** accounts
 

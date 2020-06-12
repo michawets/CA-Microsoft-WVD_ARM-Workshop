@@ -66,14 +66,8 @@ Type in **WVDWorkshop**<br/>
 Select the **WVDWorkshopFullDesktopUsers** from the list<br/>
 Click on **Select**<br/>
 ![Assign group to Application Group](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-ChangeApplicationGroup-Assignments.png)
-//TODO<br/>
-//TODO<br/>
-//TODO<br/>
-//TODO<br/>
-//TODO<br/>
-//TODO<br/>
-//TODO<br/>
-//TODO<br/>
+
+2. Sign in with **demouser001** to see if the user now has a **Full Desktop** published
 
 ## Create a new RemoteApp application group
 
@@ -108,6 +102,8 @@ Click on **Review + create**<br/>
 
 7. Review the settings we configured and click on **Create**<br/>
 ![Application Group Assignments - Create](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateApplicationGroup-Create.png)
+
+8. Sign in with **demouser002** to see if the user now has **Acrobat Reader** (and other apps) published.
 
 <script type="text/javascript">
     setTimeout(function() { 
