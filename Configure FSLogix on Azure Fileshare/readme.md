@@ -1,4 +1,4 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Configure FSLogix](/CA-Microsoft-WVD_ARM-Workshop/Configure%20FSLogix)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Configure FSLogix on Azure Fileshare](/CA-Microsoft-WVD_ARM-Workshop/Configure%20FSLogix%20on%20Azure%20Fileshare)
 # Configure FSLogix on Azure Fileshare
 
 Before you perform these steps, you must complete the previous step to install the FSLogix GPO settings on the domain controller.
