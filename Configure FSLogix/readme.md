@@ -89,7 +89,9 @@ Move all Sessionhosts to the new OU<br/>
 6. Reboot all WVD servers for the policy to apply.<br/>
 This can be done using this Powershell oneliner, causing the Windows FW to be disabled (for ping) & reboot server<br/>
 ```powershell
-Get-ADComputer -Filter 'Name -like "wvd-t-*"' | Select-Object DNSHostName | foreach { Invoke-Command -ComputerName $_.DNSHostName -ScriptBlock {Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False} ; Restart-Computer -ComputerName  $_.DNSHostName; }
+Get-ADComputer -Filter 'Name -like "wvd-t-*"' | Select-Object DNSHostName | foreach { Invoke-Command -ComputerName $_.DNSHostName -ScriptBlock {Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False} ; Restart-Computer 
+-ComputerName  $_.DNSHostName; }
+Get-ADComputer -Filter 'Name -like "wvd-p-*"' | Select-Object DNSHostName | foreach { Invoke-Command -ComputerName $_.DNSHostName -ScriptBlock {Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False} ; Restart-Computer -ComputerName  $_.DNSHostName; }
 ```
  > Tip
  > You can check for the reboot using "ping wvd-t-pool-0 -t"

@@ -10,7 +10,7 @@ In this step, you will learn how to:
 * Create a new RemoteApp application group
 * Publish application(s) to the application group
 * Configure Load-balancing mechanisms on the Hostpool
-* Configure Single- or Multi-session on the Hostpool
+* Configure RDP Settings
 
 ## Find the Windows Virtual Desktop Service
 First, we will look for the new *Azure Portal* integrated **Windows Virtual Desktop service**
@@ -104,6 +104,62 @@ Click on **Review + create**<br/>
 ![Application Group Assignments - Create](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateApplicationGroup-Create.png)
 
 8. Sign in with **demouser002** to see if the user now has **Acrobat Reader** (and other apps) published.
+
+## Configure Load-balancing mechanisms on the Hostpool
+
+There are 2 Load-balancing mechanisms available:<br/>
+ - The default Load-balancing mechanism is Breadth-first, which will evenly distribute user sessions across the session hosts in a host pool.
+ - The second Load-balancing mechanism is Depth-first, which will saturate a session host with user sessions in a host pool.<br/>
+Once the first session reaches its session limit threshold, the load balancer directs any new user connections to the next session host in the host pool until it reaches its limit, and so on.
+
+### Breadth-first
+1. Start user sessions to the Full Desktop using DemoUser001, 003, 004, 005 & 006 one-by-one, and monitor on which sessionhost the users get as a Sessionhost.<br/>
+You can monitor the sessions in the Azure portal:<br/>
+Go to the Hostpool, click on **Session hosts** and monitor the session by clicking on **Refresh**<br/>
+ > Tip: Use the HTML5 webclient in different browsers & use Private Browsing.<br/>
+ > For example: <br/>
+ > DemoUser001 in the FatClient<br/>
+ > DemoUser003 in Chrome<br/>
+ > DemoUser004 in Chrome Private Browsing<br/>
+ > DemoUser005 in Firefox<br/>
+ > DemoUSer006 in Firefox Private Browsing
+
+2. Logoff all user sessions<br/>
+This can be done in the portal:<br/>
+Go to the Hostpool, click on **Session hosts**, click on *each Sessionhost* in the list and click on **Log off all active users**
+![Logoff Sessions](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-LogoffSessions.png)
+
+3. Validate that all *Active Sessions* on all Sessionhosts are back to 0
+
+### Depth-first
+1. Change the Load-balancing mechanism on the Hostpool<br/>
+In this example, we will allow 2 sessions for each Sessionhost.
+
+2. Click on **Host pools**<br/>
+Click on the Hostpool **wvd-workshop-win10-1909-hp**<br/>
+Click on **Properties**<br/>
+Change the *Load balancing algorithm* to **Depth-First** and click on **Save**<br/>
+![AzurePortal-WVD-ChangeHostpoolLB](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-ChangeHostpoolLB.png)
+
+2. Perform the same test as Breadth-First Load-balancing in step 2, monitoring the loadbalancing of the user sessions accross the Sessionhosts.<br/>
+
+3. Logoff all user sessions (Azure Portal)
+
+4. Change back to the default Load-balancing mechanism (Azure Portal)
+
+## Configure RDP Settings
+
+1. Click on **Host pools**<br/>
+Click on the Hostpool **wvd-workshop-win10-1909-hp**<br/>
+Click on **Properties**<br/>
+Click on **RDP Settings**<br/>
+Change some settings, for example *Disk Drives* and *Audio Input* and click on **Save**
+![AzurePortal-WVD-ChangeRDPSettings](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-ChangeRDPSettings.png)
+
+2. Connect with DemoUser001 and check if you have all your local drives mapped in the WVD Session
+
+
+
 
 <script type="text/javascript">
     setTimeout(function() { 
