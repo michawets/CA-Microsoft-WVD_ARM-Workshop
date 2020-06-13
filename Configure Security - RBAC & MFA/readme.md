@@ -44,42 +44,46 @@ This is the layout:<br/>
 
 **User Account** | **Level** | **Permissions**
 --- | --- | ---
-AdminUser001@wvdworkshopt01.onmicrosoft.com | Tenant | RDS Contributor
-AdminUser002@wvdworkshopt01.onmicrosoft.com | Tenant | Reader
-AdminUser003@wvdworkshopt01.onmicrosoft.com | HostPool 'MyFirstHostpool' | RDS Contributor
-AdminUser004@wvdworkshopt01.onmicrosoft.com | HostPool 'MyPersonalHostpool' | RDS Contributor
+AdminUser001@wvdworkshopt01.onmicrosoft.com | Resource Group (wvd-workshop-sessionhosts-rg) | Contributor
+AdminUser002@wvdworkshopt01.onmicrosoft.com | Resource Group (wvd-workshop-sessionhosts-rg) | Reader
+AdminUser003@wvdworkshopt01.onmicrosoft.com | HostPool 'wvd-workshop-win10-1909-hp' | Contributor
+AdminUser004@wvdworkshopt01.onmicrosoft.com | HostPool 'wvd-workshop-win10-2004-hp' | Contributor
+
+You could do this in the Azure Portal, or by using Powershell.<br/>
+The steps below will help you doing it in Powershell
 
 1. Launch a Powershell console as Administrator
 
-2. Import the **Windows Virtual Desktop module**
+2. Sign in and connect to Azure using the admin account<br/>
 ```powershell
-Import-Module -Name Microsoft.RDInfra.RDPowerShell
+Connect-AzAccount
 ```
 
-3. Sign in to the Windows Virtual Desktop service by using the admin account who has the TenantCreator role<br/>
-In my example, this would be *admin@wvdworkshopt01.onmicrosoft.com*<br/>
+3. If you have multiple subscriptions, and need to change the default subscription, run this cmdlet:
 ```powershell
-Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
+Get-AzSubscription | Out-GridView -PassThru | Select-AzSubscription
 ```
 
-4. Assign the permissions to the AdminUsers using the New-RdsRoleAssignment cmdlet<br/>
-This is the syntax:<br/>
+4. Assign the correct roles to the users using this script:<br/>
+**You have to change the SignIn name to the correct user account ofcourse!**<br/>
 ```powershell
-New-RdsRoleAssignment -SignInName "{User to give access}" -TenantName "{WVDTenantName}" -RoleDefinitionName "{WVD Permission}"
-New-RdsRoleAssignment -SignInName "{User to give access}" -TenantName "{WVDTenantName}" -HostPoolName "{WVDHostPoolName}" -RoleDefinitionName "{WVD Permission}"
-New-RdsRoleAssignment -SignInName "{User to give access}" -TenantName "{WVDTenantName}" -HostPoolName "{WVDHostPoolName}" -AppGroupName "{WVDAppGroupName}" -RoleDefinitionName "WVD Permission}"
-```
-In my Example, this would be
-```powershell
-New-RdsRoleAssignment -SignInName "AdminUser001@wvdworkshopt01.onmicrosoft.com" -TenantName "WvdWorkshopT01" -RoleDefinitionName "RDS Contributor"
+$contributorRole = Get-AzRoleDefinition | Where-Object {$_.Name -eq "contributor"}
+$readerRole = Get-AzRoleDefinition | Where-Object {$_.Name -eq "reader"}
+
+$resourceGroup = Get-AzResourceGroup -Name "wvd-workshop-sessionhosts-rg"
+$wvdhostpool1909 = Get-AzWvdHostPool -Name "wvd-workshop-win10-1909-hp" -ResourceGroupName $resourceGroup.ResourceGroupName
+$wvdhostpool2004 = Get-AzWvdHostPool -Name "wvd-workshop-win10-2004-hp" -ResourceGroupName $resourceGroup.ResourceGroupName
+
+New-AzRoleAssignment -SignInName AdminUser001@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $contributorRole.Name -Scope $resourceGroup.ResourceId
+New-AzRoleAssignment -SignInName AdminUser002@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $readerRole.Name -Scope $resourceGroup.ResourceId
+New-AzRoleAssignment -SignInName AdminUser003@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $contributorRole.Name -Scope $wvdhostpool1909.Id
+New-AzRoleAssignment -SignInName AdminUser004@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $contributorRole.Name -Scope $wvdhostpool1909.Id
+
 ```
 
-5. Open a new Powershell console for each AdminUser<br/>
-Import the **Windows Virtual Desktop module**<br/>
-Sign in to the Windows Virtual Desktop service by using the **AdminUserxxx** account<br/>
-Test what you can see with the AdminUser, if you can create a HostPool or AppGroup<br/>
-Test if you can read the **MyPersonalHostpool** using AdminUser003<br/>
-Test if you can read the **MyFirstHostpool** using AdminUser004
+5. Sign in into the Azure portal with AdminUser001, 002, 003 & 004 and see what resources you are able to see.
+
+6. You could test even more levels if you want, but this is out of the scope of this workshop
 
 
 
