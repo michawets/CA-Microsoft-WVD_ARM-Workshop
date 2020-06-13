@@ -67,7 +67,7 @@ Get-AzSubscription | Out-GridView -PassThru | Select-AzSubscription
 ```
 
 4. Assign the correct roles to the users using this script:<br/>
-**You have to change the SignIn name to the correct user account ofcourse!**
+You have to change the SignIn name to the correct user account ofcourse!
 ```powershell
 $contributorRole = Get-AzRoleDefinition | Where-Object {$_.Name -eq "contributor"}
 $readerRole = Get-AzRoleDefinition | Where-Object {$_.Name -eq "reader"}
