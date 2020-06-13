@@ -131,6 +131,26 @@ First, you get a list of Applications, and publish a remote app using that info.
 ```
 
 
+3. You could also configure the Loadbalancing mechanisms using powershell if you like:
+```powershell
+    Update-AzWvdHostPool -ResourceGroupName "wvd-workshop-sessionhosts-rg" -Name $my2004HP.Name -LoadBalancerType BreadthFirst
+```
+or
+```powershell
+    Update-AzWvdHostPool -ResourceGroupName "wvd-workshop-sessionhosts-rg" -Name $my2004HP.Name -LoadBalancerType DepthFirst
+```
+
+4. Start user sessions to the Full Desktop using DemoUser001, 003, 004, 005 & 006 one-by-one, and monitor on which sessionhost the users get as a Sessionhost.<br/>
+You can monitor the sessions using Powershell
+```powershell
+    Get-AzWvdUserSession -ResourceGroupName "wvd-workshop-sessionhosts-rg" -HostPoolName $my2004HP.Name
+```
+
+5. Remove a user session using powershell (replace **SessionHostName** & **SessionID**)
+```powershell
+Remove-AzWvdUserSession -ResourceGroupName "wvd-workshop-sessionhosts-rg" -HostPoolName $my2004HP.Name -SessionHostName <<SessionHostName>> -Id <<SessionID>>
+```
+
 
 <script type="text/javascript">
     setTimeout(function() { 
