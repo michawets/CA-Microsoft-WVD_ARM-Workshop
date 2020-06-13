@@ -84,6 +84,9 @@ Get-AzSubscription | Out-GridView -PassThru | Select-AzSubscription
 6. You could test even more levels if you want, but this is out of the scope of this workshop
 
 
+## Create a new RemoteApp Application Group
+
+1. Create a new **RemoteApp Application Group**
 
 
 
