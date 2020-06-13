@@ -148,7 +148,7 @@ You can monitor the sessions using Powershell
 
 5. Remove a user session using powershell (replace **SessionHostName** & **SessionID**)
 ```powershell
-Remove-AzWvdUserSession -ResourceGroupName "wvd-workshop-sessionhosts-rg" -HostPoolName $my2004HP.Name -SessionHostName <<SessionHostName>> -Id <<SessionID>>
+    Remove-AzWvdUserSession -ResourceGroupName "wvd-workshop-sessionhosts-rg" -HostPoolName $my2004HP.Name -SessionHostName <<SessionHostName>> -Id <<SessionID>>
 ```
 
 
