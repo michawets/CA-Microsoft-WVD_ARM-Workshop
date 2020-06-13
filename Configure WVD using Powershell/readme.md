@@ -84,6 +84,24 @@ Get-AzSubscription | Out-GridView -PassThru | Select-AzSubscription
     Get-AzWvdUserSession -ResourceGroupName "wvd-workshop-sessionhosts-rg" -HostPoolName $my2004HP.Name -SessionHostName $my2004SH.Name.Substring($my2004SH.Name.IndexOf("/") + 1)
 ```
 
+## Create a new RemoteApp Application Group
+
+1. Create a new **RemoteApp Application Group**
+```powershell
+    New-AzWvdApplicationGroup -ResourceGroupName "wvd-workshop-sessionhosts-rg" -Name "wvd-workshop-win10-2004-hp-RAPP" -Location "eastus" -FriendlyName "My Win10 2004 Remote Apps" -Description "Apps published on the Win10 2004" -HostPoolArmPath $my2004HP.Id -ApplicationGroupType RemoteApp
+    $my2004RAPP = Get-AzWvdApplicationGroup -ResourceGroupName "wvd-workshop-sessionhosts-rg" -Name "wvd-workshop-win10-2004-hp-RAPP"
+```
+
+2. Publish applications in the new **RemoteApp Application Group**<br/>
+First, you get a list of Applications, and publish a remote app using that info.<br/>
+ > If you encounter an error, check the availability of your Sessionhosts in the Hostpool.<br/>
+ > If they are unavailable, run this powershell script and restart the sessionshost: 
+ > Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\rdp-sxs" -Name "fReverseConnectMode" -Value 1 -Type DWord -Force
+```powershell
+    Get-AzWvdStartMenuItem -ResourceGroupName "wvd-workshop-sessionhosts-rg" -ApplicationGroupName $my2004RAPP.Name
+```
+
+
 
 
 
