@@ -49,6 +49,8 @@ AdminUser002@wvdworkshopt01.onmicrosoft.com | Resource Group (wvd-workshop-sessi
 AdminUser003@wvdworkshopt01.onmicrosoft.com | HostPool 'wvd-workshop-win10-1909-hp' | Contributor
 AdminUser004@wvdworkshopt01.onmicrosoft.com | HostPool 'wvd-workshop-win10-2004-hp' | Contributor
 
+<br/>
+<br/>
 You could do this in the Azure Portal, or by using Powershell.<br/>
 The steps below will help you doing it in Powershell
 
@@ -65,7 +67,7 @@ Get-AzSubscription | Out-GridView -PassThru | Select-AzSubscription
 ```
 
 4. Assign the correct roles to the users using this script:<br/>
-**You have to change the SignIn name to the correct user account ofcourse!**<br/>
+**You have to change the SignIn name to the correct user account ofcourse!**
 ```powershell
 $contributorRole = Get-AzRoleDefinition | Where-Object {$_.Name -eq "contributor"}
 $readerRole = Get-AzRoleDefinition | Where-Object {$_.Name -eq "reader"}
@@ -78,7 +80,6 @@ New-AzRoleAssignment -SignInName AdminUser001@wvdworkshopt01.onmicrosoft.com -Ro
 New-AzRoleAssignment -SignInName AdminUser002@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $readerRole.Name -Scope $resourceGroup.ResourceId
 New-AzRoleAssignment -SignInName AdminUser003@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $contributorRole.Name -Scope $wvdhostpool1909.Id
 New-AzRoleAssignment -SignInName AdminUser004@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $contributorRole.Name -Scope $wvdhostpool1909.Id
-
 ```
 
 5. Sign in into the Azure portal with AdminUser001, 002, 003 & 004 and see what resources you are able to see.
