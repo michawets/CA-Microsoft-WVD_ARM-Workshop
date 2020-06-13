@@ -79,7 +79,7 @@ Get-AzSubscription | Out-GridView -PassThru | Select-AzSubscription
     New-AzRoleAssignment -SignInName "AdminUser004@wvdworkshopt01.onmicrosoft.com" -RoleDefinitionName $contributorRole.Name -Scope $wvdhostpool2004.Id
 ```
 
-5. Sign in into the Azure portal with AdminUser001, 002, 003 & 004 and see what resources you are able to see.
+5. Sign in into the Azure portal with AdminUser001, 002, 003 & 004 and validate what resources you are able to see.
 
 6. You could test even more levels if you want, but this is out of the scope of this workshop
 
