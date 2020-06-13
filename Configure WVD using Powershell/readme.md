@@ -98,19 +98,36 @@ First, you get a list of Applications, and publish a remote app using that info.
  > If they are unavailable, run this powershell script and restart the sessionshost: 
  > Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\rdp-sxs" -Name "fReverseConnectMode" -Value 1 -Type DWord -Force
 ```powershell
-    Get-AzWvdStartMenuItem -ResourceGroupName "wvd-workshop-sessionhosts-rg" -ApplicationGroupName $my2004RAPP.Name
+    $myApp = Get-AzWvdStartMenuItem -ResourceGroupName "wvd-workshop-sessionhosts-rg" -ApplicationGroupName $my2004RAPP.Name | Out-GridView -PassThru
+    New-AzWvdApplication -ResourceGroupName "wvd-workshop-sessionhosts-rg" -GroupName $my2004RAPP.Name -Name $myApp.AppAlias -FilePath $myApp.FilePath -FriendlyName $myApp.AppAlias -IconIndex $myApp.IconIndex -IconPath $myApp.IconPath -CommandLineSetting Allow -ShowInPortal:$true
 ```
 
+3. You can repeat step 2 as much as you want, publishing all applications you like.
 
-
-
-
-Get-AzWvdWorkspace -ResourceGroupName ResourceGroupName -Name WorkspaceName
-Get-AzWvdHostPool -ResourceGroupName ResourceGroupName -Name HostPoolName
-Get-AzWvdApplicationGroup -ResourceGroupName ResourceGroupName
-Get-AzWvdSessionHost -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName
+4. Assign the **RemoteApp Application Group** to the **WVDWorkshopRemoteAppUsers** group:
 ```powershell
-    
+    $my2004RAPGroup = Get-AzADGroup -DisplayName "WVDWorkshopRemoteAppUsers"
+    $wvdDesktopVirtualizationUserRole = Get-AzRoleDefinition | Where-Object {$_.Name -eq "Desktop Virtualization User"}
+    New-AzRoleAssignment -ObjectId $my2004RAPGroup.Id -RoleDefinitionName $wvdDesktopVirtualizationUserRole.Name -Scope $my2004RAPP.Id
+```
+
+5. Register the **RemoteApp Application Group** to the **Workspace**:
+```powershell
+    Register-AzWvdApplicationGroup -ResourceGroupName "wvd-workshop-sessionhosts-rg" -WorkspaceName $my2004WS.Name -ApplicationGroupPath $my2004RAPP.Id
+```
+
+## Configure the 2004 deployment
+
+1. Assign the **RemoteDesktop Application Group** to the **WVDWorkshopFullDesktopUsers** group:
+```powershell
+    $my2004DAGGroup = Get-AzADGroup -DisplayName "WVDWorkshopFullDesktopUsers"
+    $wvdDesktopVirtualizationUserRole = Get-AzRoleDefinition | Where-Object {$_.Name -eq "Desktop Virtualization User"}
+    New-AzRoleAssignment -ObjectId $my2004DAGGroup.Id -RoleDefinitionName $wvdDesktopVirtualizationUserRole.Name -Scope $my2004DAG.Id
+```
+
+2. Change the RDP Settings on the hostpool:
+```powershell
+    Update-AzWvdHostPool -ResourceGroupName "wvd-workshop-sessionhosts-rg" -Name $my2004HP.Name -CustomRdpProperty "audiocapturemode:i:1;audiomode:i:0;camerastoredirect:s:*;devicestoredirect:s:*;drivestoredirect:s:*"
 ```
 
 
