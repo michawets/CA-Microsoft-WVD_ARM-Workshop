@@ -76,10 +76,10 @@ $resourceGroup = Get-AzResourceGroup -Name "wvd-workshop-sessionhosts-rg"
 $wvdhostpool1909 = Get-AzWvdHostPool -Name "wvd-workshop-win10-1909-hp" -ResourceGroupName $resourceGroup.ResourceGroupName
 $wvdhostpool2004 = Get-AzWvdHostPool -Name "wvd-workshop-win10-2004-hp" -ResourceGroupName $resourceGroup.ResourceGroupName
 
-New-AzRoleAssignment -SignInName AdminUser001@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $contributorRole.Name -Scope $resourceGroup.ResourceId
-New-AzRoleAssignment -SignInName AdminUser002@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $readerRole.Name -Scope $resourceGroup.ResourceId
-New-AzRoleAssignment -SignInName AdminUser003@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $contributorRole.Name -Scope $wvdhostpool1909.Id
-New-AzRoleAssignment -SignInName AdminUser004@wvdworkshopt01.onmicrosoft.com -RoleDefinitionName $contributorRole.Name -Scope $wvdhostpool1909.Id
+New-AzRoleAssignment -SignInName "AdminUser001@wvdworkshopt01.onmicrosoft.com" -RoleDefinitionName $contributorRole.Name -Scope $resourceGroup.ResourceId
+New-AzRoleAssignment -SignInName "AdminUser002@wvdworkshopt01.onmicrosoft.com" -RoleDefinitionName $readerRole.Name -Scope $resourceGroup.ResourceId
+New-AzRoleAssignment -SignInName "AdminUser003@wvdworkshopt01.onmicrosoft.com" -RoleDefinitionName $contributorRole.Name -Scope $wvdhostpool1909.Id
+New-AzRoleAssignment -SignInName "AdminUser004@wvdworkshopt01.onmicrosoft.com" -RoleDefinitionName $contributorRole.Name -Scope $wvdhostpool1909.Id
 ```
 
 5. Sign in into the Azure portal with AdminUser001, 002, 003 & 004 and see what resources you are able to see.
