@@ -50,12 +50,14 @@ You can run the following *Powershell script* in a Powershell console (as Admini
 ```
 ![DemoUser001 in Windows AD](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/WindowsAD-DemoUser001.png)
 
-2. Create 2 AD Groups for WVD assignments later on<br/>
+2. Create 3 AD Groups for WVD assignments later on<br/>
 For example: <br/>
 WVDWorkshopFullDesktopUsers<br/>
 WVDWorkshopRemoteAppUsers<br/>
+WVDWorkshopAdmins<br/>
 Assign "demouser001","demouser003","demouser004","demouser005","demouser006" to the *WVDWorkshopFullDesktopUsers* group<br/>
 Assign "demouser002","demouser007","demouser008","demouser009","demouser010" to the *WVDWorkshopRemoteAppUsers* group<br/>
+Assign all adminuser* accounts and your Domain Admin account to the *WVDWorkshopAdmins* group<br/>
 You can run the following *Powershell script* in a Powershell console (as Administrator)<br/>
 ```powershell
     $ErrorActionPreference = "Stop"
@@ -70,14 +72,18 @@ You can run the following *Powershell script* in a Powershell console (as Admini
 
     $FullDesktopGroupName = "WVDWorkshopFullDesktopUsers"
     $RemoteAppGroupName = "WVDWorkshopRemoteAppUsers"
+    $AdminGroupName = "WVDWorkshopAdmins"
     New-ADGroup -Name $FullDesktopGroupName -DisplayName $FullDesktopGroupName -Path $path -GroupScope Global -GroupCategory Security
     New-ADGroup -Name $RemoteAppGroupName -DisplayName $RemoteAppGroupName -Path $path -GroupScope Global -GroupCategory Security
+    New-ADGroup -Name $AdminGroupName -DisplayName $AdminGroupName -Path $path -GroupScope Global -GroupCategory Security
 
     $FullDesktopGroup = Get-ADGroup $FullDesktopGroupName
     $RemoteAppGroup = Get-ADGroup $RemoteAppGroupName
-
+    $AdminGroup = Get-ADGroup $AdminGroupName
+    
     $FullDesktopGroup | Add-ADGroupMember -Members ("demouser001","demouser003","demouser004","demouser005","demouser006")
     $RemoteAppGroup | Add-ADGroupMember -Members ("demouser002","demouser007","demouser008","demouser009","demouser010")
+    $AdminGroup | Add-ADGroupMember -Members ("adminuser001","adminuser002","adminuser003","adminuser004","adminuser005",$env:USERNAME)
 ```
 
 ## Test synchronisation from Windows AD to Azure AD
