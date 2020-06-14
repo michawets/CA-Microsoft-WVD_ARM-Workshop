@@ -62,7 +62,7 @@ You will need to install it, and restart your Powershell window<br/>
 7. Restart your Powershell console as Administrator
 
 8. Import the AzFilesHybrid module using this command<br/>
-This should not give any warnings anymore and should just return<br/>
+*This should not give any warnings anymore at this point*<br/>
 ```powershell
     Import-Module -name AzFilesHybrid
 ```
