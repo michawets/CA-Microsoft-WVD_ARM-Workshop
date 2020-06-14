@@ -46,7 +46,7 @@ We will do as much as possible with Powershell to speed things up.<br/>
     Import-Module -name AzFilesHybrid
 ```
 **Important**: You will get an warning that you need PowershellGet 1.6.0+<br/>
-You will need to install it, and restart your Powershell window
+You will need to install it, and restart your Powershell window<br/>
 ![PowershellGet Warning](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-PowershellGetWarning.png)
 
 5. Restart your Powershell console as Administrator
@@ -56,7 +56,7 @@ You will need to install it, and restart your Powershell window
     Import-Module -name AzFilesHybrid
 ```
 **Important**: You will get another warning that you need Azure Powershell 2.8.0+ and Az.Storage 2.0.0+<br/>
-You will need to install it, and restart your Powershell window
+You will need to install it, and restart your Powershell window<br/>
 ![Powershell AZ Warning](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Powershell-AzWarning.png)
 
 7. Restart your Powershell console as Administrator
