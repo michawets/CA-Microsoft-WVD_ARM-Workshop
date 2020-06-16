@@ -84,6 +84,19 @@ Depending on how many VMs you’re creating, this process can take 15 minutes or
 ![Create Hostpool - Deployment](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-deployment.png)
 
 
+## Assign a DemoUser for testing
+
+1. After the deployment, goto the **Application Groups**<br/>
+Click on **wvd-workshop-win10-1909-hp-DAG**<br/>
+Click on **Assignments**<br/>
+Click on **Add**<br/>
+Typ in **demouser**<br/>
+Select **demouser001** from the list<br/>
+Click on **Select**<br/>
+![Quick Assign DemoUser001](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-QuickAssignDemoUser001.png)
+
+2. Login with Demouser001 and check if you can see the published Full Desktop.
+
 <script type="text/javascript">
     setTimeout(function() { 
             document.getElementById("sidebar").style.display = "none";
