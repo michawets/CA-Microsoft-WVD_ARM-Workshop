@@ -1,8 +1,0 @@
-5. [Create custom WVD image](/MicrosoftWVDWorkshop/5.%20Create%20custom%20WVD%20image)
-6. [Create WVD Hostpool and VM for Pooled usage from the Azure Marketplace](/MicrosoftWVDWorkshop/6.%20Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage)
-7. [Create WVD Hostpool and VM for Personal usage from the ARM Template](/MicrosoftWVDWorkshop/7.%20Create%20WVD%20Hostpool%20and%20VM%20for%20Personal%20usage/)
-8. [Configure Pooled WVD](/MicrosoftWVDWorkshop/8.%20Configure%20Pooled%20WVD)
-9. [Configure Personal WVD](/MicrosoftWVDWorkshop/9.%20Configure%20Personal%20WVD)
-10. [Configure FSLogix](/MicrosoftWVDWorkshop/10.%20Configure%20FSLogix)
-11. [Connect to WVD](/MicrosoftWVDWorkshop/11.%20Connect%20to%20WVD)
-12. [Configure Security - RBAC & MFA](/MicrosoftWVDWorkshop/12.%20Configure%20Security%20-%20RBAC%20%26%20MFA)
