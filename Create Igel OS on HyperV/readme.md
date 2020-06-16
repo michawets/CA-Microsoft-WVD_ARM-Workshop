@@ -147,6 +147,12 @@ Select the Remote Application or Remote Desktop configured for your user account
 ![HyperV-Igel-SelectYourApplicationOrDesktop](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-SelectYourApplicationOrDesktop.png)
 
 
+## Configure Dead keys
+
+1. A small tip from IGEL:<br/>
+If your keyboard requires "dead keys" like **"^"** or **"`"**, you can do this in the Setup of Igel OS:<br/>
+More info on Dead keys can be found here! <a href="https://en.wikipedia.org/wiki/Dead_key" target="_blank">Dead Keys wiki</a><br/>
+![HyperV-Igel-EnableDeadKeys](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/HyperV-Igel-EnableDeadKeys.png)
 
 
 
