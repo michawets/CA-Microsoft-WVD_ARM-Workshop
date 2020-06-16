@@ -18,6 +18,9 @@ Before you begin, you have to determine the Azure AD Tenant & Windows AD setup f
  > The others need to wait until the PreReqs are completed before proceeding.
 
 ## PreRequisite Tasks
+### Workshop layout
+[Workshop layout](/CA-Microsoft-WVD_ARM-Workshop/Workshop%20layout)
+
 ### Scenario A)
 1. [Create Windows Active Directory VM and configure Azure AD Connect](/CA-Microsoft-WVD_ARM-Workshop/Create%20Windows%20Active%20Directory%20VM)
 2. [Create test users & groups](/CA-Microsoft-WVD_ARM-Workshop/Create%20Test%20users%20and%20groups)
