@@ -44,7 +44,8 @@ The test accounts can be shared for all attendees!<br/>
 6. [Configure FSLogix with Fileserver on the Domain Controller](/CA-Microsoft-WVD_ARM-Workshop/Configure%20FSLogix)
 7. [Configure FSLogix on Azure Fileshare](/CA-Microsoft-WVD_ARM-Workshop/Configure%20FSLogix%20on%20Azure%20Fileshare)
 8. [Configure Security - RBAC & MFA](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Security%20-%20RBAC%20%26%20MFA)
-9. [Install IGEL OS on Hyper-V](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
+9. [Optional] [Install IGEL OS on Hyper-V](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
+10. [Optional] [Install IGEL OS on VirtualBox](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20VirtualBox)
 
 
 ![Footer](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Footer.png)
