@@ -3,6 +3,9 @@
 These are the Hands-on Lab steps, part of the *Microsoft & Cloud-Architect WVD ARM (Spring update) Workshop*.<br/>
 If you have any questions, just ask **Micha** or **Bart** for further assistance<br/>
 
+## Slides
+You can find the slides from the Presentation <a href="/CA-Microsoft-WVD_ARM-Workshop/Presentation/MSFT%20Workshop%20-%20Windows%20Virtual%20Desktop.pdf" target="_blank">here</a>
+
 ## Considerations
 
 Before you begin, you have to determine the Azure AD Tenant & Windows AD setup for this lab.<br/>
