@@ -51,6 +51,15 @@ The test accounts can be shared for all attendees!<br/>
 10. [Optional] [Install IGEL OS on VirtualBox](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20VirtualBox)
 
 
+**IMPORTANT**<br/>
+At this moment (17/06/2020), there is a bug in the Windows 10 2004 version.<br/>
+When connecting to WVD, you will get an error in the client:<br/>
+**Error code: 0x3000047**<br/>
+To resolve this, you must execute this on all VMs running Windows 10 2004 and restart the VM:
+```powershell
+    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\rdp-sxs" -Name "fReverseConnectMode" -Value 1 -Type DWord -Force
+```
+
 ![Footer](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Footer.png)
 
 <script type="text/javascript">

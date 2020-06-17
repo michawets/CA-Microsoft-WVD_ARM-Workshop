@@ -60,16 +60,6 @@ Check if all fields are correct. Normally, all default values should be ok, but 
 Depending on how many VMs you’re creating, this process can take 15 minutes or more to complete.
 ![Deploy Hostpool with VMs](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/AzurePortal-WVD-CreateHostpool-ARMdeployment.png)
 
-<p style="font-weight: bold; font-size:xx-large;">IMPORTANT</p><br/>
-
- At this moment (17/06/2020), there is a bug in the Windows 10 2004 version.<br/>
- When connecting to WVD, you will get an error in the client:<br/>
-**Error code: 0x3000047**<br/>
-To resolve this, you must execute this on all VMs running Windows 10 2004 and restart the VM:
-```powershell
-    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\rdp-sxs" -Name "fReverseConnectMode" -Value 1 -Type DWord -Force
-```
-
 <script type="text/javascript">
     setTimeout(function() { 
             document.getElementById("sidebar").style.display = "none";
