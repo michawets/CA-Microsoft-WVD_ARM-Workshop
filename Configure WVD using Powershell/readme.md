@@ -94,8 +94,9 @@ Get-AzSubscription | Out-GridView -PassThru | Select-AzSubscription
 
 2. Publish applications in the new **RemoteApp Application Group**<br/>
 First, you get a list of Applications, and publish a remote app using that info.<br/>
+ > **IMPORTANT**<br/>
  > If you encounter an error, check the availability of your Sessionhosts in the Hostpool.<br/>
- > If they are unavailable, run this powershell script and restart the sessionshost: 
+ > If they are unavailable, run this powershell script and restart the sessionshost: <br/>
  > Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\rdp-sxs" -Name "fReverseConnectMode" -Value 1 -Type DWord -Force
 ```powershell
     $myApp = Get-AzWvdStartMenuItem -ResourceGroupName "wvd-workshop-sessionhosts-rg" -ApplicationGroupName $my2004RAPP.Name | Out-GridView -PassThru
