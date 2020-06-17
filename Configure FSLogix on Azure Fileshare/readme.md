@@ -152,10 +152,10 @@ Administrators | This Folder, Subfolders, and files | Full Control
 Domain Admins | This Folder, Subfolders, and files | Full Control
 
 17. Change the FSLogix policy (as seen in the previous step) and point the FSLogix share to the new **Azure Fileshare**<br/>
-This will be something like **\\wvdworkshopdc144eaesa.file.core.windows.net\wvdprofiles**<br/>
+This will be something like **\\\wvdworkshopdc144eaesa.file.core.windows.net\wvdprofiles\FSLogix-Profiles**<br/>
 You get the path from the variables from the powershell scripts:
 ```powershell
-    Write-Host $filesharepath
+    Write-Host ("{0}\FSLogix-Profiles" -f $filesharepath)
 ```
 
 18. Test the setup by signin in with the Testusers (demouserxxx)
