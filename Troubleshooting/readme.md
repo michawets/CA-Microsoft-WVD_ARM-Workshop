@@ -9,6 +9,10 @@ This is the url that you need to supply to the deployment as an Artificat locati
 https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/active-directory-new-domain/
 ```
 
+## Deployment failed for the ARM template 
+
+If you get an error during the deployment of the ARM Template, stating that the NICs cannot be created due to the fact that the VNET/Subnet cannot be found, make sure that you create the VMs in the **same location** as your **VNET and Domain Controller**.<br/>
+The WVD ARM objects are currently (18/6/2020) only available in the US regions, but your own ARM objects (Virtual Machines, Domain Controller, VNET, etc) can be in the nearest region.
 
 <script type="text/javascript">
     setTimeout(function() { 
