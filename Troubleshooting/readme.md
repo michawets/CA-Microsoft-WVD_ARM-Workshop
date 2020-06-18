@@ -5,8 +5,9 @@
 
 You can use **Redeploy** to try again, but you will get an error for the **Artifacts Location**<br/>
 This is the url that you need to supply to the deployment as an Artificat location:<br/>
+```
 https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/active-directory-new-domain/
-
+```
 
 
 <script type="text/javascript">
