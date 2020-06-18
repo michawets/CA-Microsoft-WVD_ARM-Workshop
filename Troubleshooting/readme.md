@@ -1,8 +1,12 @@
 [Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Troubleshooting](/CA-Microsoft-WVD_ARM-Workshop/Troubleshooting)
 # Troubleshooting
 
-The AD VM artifacts location url:
+## Deployment failed for a new VW with Windows AD?
+
+You can use **Redeploy** to try again, but you will get an error for the **Artifacts Location**<br/>
+This is the url that you need to supply to the deployment as an Artificat location:<br/>
 https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/active-directory-new-domain/
+
 
 
 <script type="text/javascript">
