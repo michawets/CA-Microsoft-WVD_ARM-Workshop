@@ -49,7 +49,7 @@ The test accounts can be shared for all attendees!<br/>
 8. [Configure Security - RBAC & MFA](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Security%20-%20RBAC%20%26%20MFA)
 9. [Optional] [Install IGEL OS on Hyper-V](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
 10. [Optional] [Install IGEL OS on VirtualBox](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20VirtualBox)
-
+11. [Troubleshooting](/CA-Microsoft-WVD_ARM-Workshop/Troubleshooting)
 
 **IMPORTANT**<br/>
 At this moment (17/06/2020), there is a bug in the Windows 10 2004 version.<br/>
