@@ -131,7 +131,7 @@ This script will give our Admin accounts **Elevated Share Contributor** permissi
 ```powershell
     $myDomain = (Get-ADDomain).NetBIOSName
     $Username = "{0}\adminuser001" -f $myDomain
-    $Password = "Micha&BartForProctorsOfTheYear2019"
+    $Password = "Micha&BartForProctorsOfTheYear2020"
 
     $cred = New-Object System.Management.Automation.PSCredential($Username, (ConvertTo-SecureString $Password -AsPlainText -Force))
     $filesharepath = "\\{0}.file.core.windows.net\wvdprofiles" -f $storageAccountName
