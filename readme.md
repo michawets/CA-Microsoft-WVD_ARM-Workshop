@@ -4,8 +4,12 @@ These are the Hands-on Lab steps, part of the *Microsoft & Cloud-Architect WVD A
 If you have any questions, just ask **Micha** <a href="https://www.cloud-architect.be" target="_blank">(blog)</a> or **Bart** <a href="https://bartroels.github.io/2020-04-21-EverythingYouNeedtoKnowOnWVD/" target="_blank">(blog)</a> for further assistance<br/>
 
 
-## Slides
+## Slides + video
 You can find the slides from the Presentation <a href="/CA-Microsoft-WVD_ARM-Workshop/Presentation/MSFT%20Workshop%20-%20Windows%20Virtual%20Desktop.pdf" target="_blank">here</a>
+You can find the recordings here:<br/>
+<a href="https://youtu.be/__Z4-zCNdlI" target="_blank">Part 1</a><br/>
+<a href="https://youtu.be/_j3IQfPfo_Q" target="_blank">Part 2</a><br/>
+Part 3 (Coming soon)<br/>
 
 ## Considerations
 
