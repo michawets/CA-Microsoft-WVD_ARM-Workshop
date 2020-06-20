@@ -1,9 +1,8 @@
 # Welcome to the Microsoft & Cloud-Architect WVD Workshop
 
 These are the Hands-on Lab steps, part of the *Microsoft & Cloud-Architect WVD ARM (Spring update) Workshop*.<br/>
-If you have any questions, just ask **Micha** or **Bart** for further assistance<br/>
-<a href="https://bartroels.github.io/2020-04-21-EverythingYouNeedtoKnowOnWVD/" target="_blank">Blogpage from Bart</a><br/>
-<a href="https://www.cloud-architect.be" target="_blank">My blog</a>
+If you have any questions, just ask **Micha** <a href="https://www.cloud-architect.be" target="_blank">(blog)</a> or **Bart** <a href="https://bartroels.github.io/2020-04-21-EverythingYouNeedtoKnowOnWVD/" target="_blank">(blog)</a> for further assistance<br/>
+
 
 ## Slides
 You can find the slides from the Presentation <a href="/CA-Microsoft-WVD_ARM-Workshop/Presentation/MSFT%20Workshop%20-%20Windows%20Virtual%20Desktop.pdf" target="_blank">here</a>
