@@ -9,7 +9,7 @@ You can find the slides from the Presentation <a href="/CA-Microsoft-WVD_ARM-Wor
 You can find the recordings here:<br/>
 <a href="https://youtu.be/__Z4-zCNdlI" target="_blank">Part 1</a><br/>
 <a href="https://youtu.be/_j3IQfPfo_Q" target="_blank">Part 2</a><br/>
-Part 3 (Coming soon)<br/>
+<a href="https://youtu.be/6WCqaWWtyfY" target="_blank">Part 3</a><br/>
 
 ## Considerations
 
