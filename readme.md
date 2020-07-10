@@ -27,17 +27,17 @@ Before you begin, you have to determine the Azure AD Tenant & Windows AD setup f
 
 ## PreRequisite Tasks
 ### Workshop layout
-[Workshop layout](/CA-Microsoft-WVD_ARM-Workshop/Workshop%20layout)
+[Workshop layout](/Workshop%20layout)
 
 ### Scenario A)
-1. [Create Windows Active Directory VM and configure Azure AD Connect](/CA-Microsoft-WVD_ARM-Workshop/Create%20Windows%20Active%20Directory%20VM)
-2. [Create test users & groups](/CA-Microsoft-WVD_ARM-Workshop/Create%20Test%20users%20and%20groups)
+1. [Create Windows Active Directory VM and configure Azure AD Connect](/Create%20Windows%20Active%20Directory%20VM)
+2. [Create test users & groups](/Create%20Test%20users%20and%20groups)
 
 ### Scenario B)
-1. [Create test users & groups](/CA-Microsoft-WVD_ARM-Workshop/Create%20Test%20users%20and%20groups)
+1. [Create test users & groups](/Create%20Test%20users%20and%20groups)
 
 ## How to Connect
-1. [How to Connect to WVD Spring edition](/CA-Microsoft-WVD_ARM-Workshop/Connect%20to%20WVD)
+1. [How to Connect to WVD Spring edition](/Connect%20to%20WVD)
 
 ## Windows Virtual Desktop Tasks
 If you are working alone, you can use the Resource Group names as stated in the workshop.<br/>
@@ -67,14 +67,3 @@ To resolve this, you must execute this on all VMs running Windows 10 2004 and re
 
 ![Footer](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Footer.png)
 
-<script type="text/javascript">
-    setTimeout(function() { 
-            document.getElementById("sidebar").style.display = "none";
-            var x = document.getElementsByClassName('inner'); 
-            x[0].style.width = "90%";
-            var x = document.getElementsByTagName('h1'); 
-            x[0].style.width = "90%";
-            x[0].style.textAlign = "center"
-            x[0].innerHTML = "Microsoft & Cloud-Architect WVD Workshop"
-        }, 250);
-</script>
