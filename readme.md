@@ -44,17 +44,17 @@ If you are working alone, you can use the Resource Group names as stated in the 
 If you are sharing an Azure AD Tenant, subscription and Windows AD, keep in mind that each attendee needs its own Resource Groups.<br/>
 The test accounts can be shared for all attendees!<br/>
 
-1. [Create custom WVD image](/CA-Microsoft-WVD_ARM-Workshop/Create%20custom%20WVD%20image)
-2. [Create WVD Workspace, Hostpool and VMs from the Azure Marketplace](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage)
-3. [Create WVD Workspace, Hostpool and VMs from the ARM Template](/CA-Microsoft-WVD_ARM-Workshop/Create%20WVD%20Hostpool%20and%20VMs%20using%20the%20ARM%20Template)
-4. [Configure Pooled WVD in the Portal](/CA-Microsoft-WVD_ARM-Workshop/Configure%20WVD%20in%20Portal)
-5. [Configure Pooled WVD using Powershell](/CA-Microsoft-WVD_ARM-Workshop/Configure%20WVD%20using%20Powershell)
-6. [Configure FSLogix with Fileserver on the Domain Controller](/CA-Microsoft-WVD_ARM-Workshop/Configure%20FSLogix)
-7. [Configure FSLogix on Azure Fileshare](/CA-Microsoft-WVD_ARM-Workshop/Configure%20FSLogix%20on%20Azure%20Fileshare)
-8. [Configure Security - RBAC & MFA](/CA-Microsoft-WVD_ARM-Workshop/Configure%20Security%20-%20RBAC%20%26%20MFA)
-9. [Optional] [Install IGEL OS on Hyper-V](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20HyperV)
-10. [Optional] [Install IGEL OS on VirtualBox](/CA-Microsoft-WVD_ARM-Workshop/Create%20Igel%20OS%20on%20VirtualBox)
-11. [Troubleshooting](/CA-Microsoft-WVD_ARM-Workshop/Troubleshooting)
+1. [Create custom WVD image](/Create%20custom%20WVD%20image)
+2. [Create WVD Workspace, Hostpool and VMs from the Azure Marketplace](/Create%20WVD%20Hostpool%20and%20VM%20for%20Pooled%20usage)
+3. [Create WVD Workspace, Hostpool and VMs from the ARM Template](/Create%20WVD%20Hostpool%20and%20VMs%20using%20the%20ARM%20Template)
+4. [Configure Pooled WVD in the Portal](/Configure%20WVD%20in%20Portal)
+5. [Configure Pooled WVD using Powershell](/Configure%20WVD%20using%20Powershell)
+6. [Configure FSLogix with Fileserver on the Domain Controller](/Configure%20FSLogix)
+7. [Configure FSLogix on Azure Fileshare](/Configure%20FSLogix%20on%20Azure%20Fileshare)
+8. [Configure Security - RBAC & MFA](/Configure%20Security%20-%20RBAC%20%26%20MFA)
+9. [Optional] [Install IGEL OS on Hyper-V](/Create%20Igel%20OS%20on%20HyperV)
+10. [Optional] [Install IGEL OS on VirtualBox](/Create%20Igel%20OS%20on%20VirtualBox)
+11. [Troubleshooting](/Troubleshooting)
 
 **IMPORTANT**<br/>
 At this moment (17/06/2020), there is a bug in the Windows 10 2004 version.<br/>
