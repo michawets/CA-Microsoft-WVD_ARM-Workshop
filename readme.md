@@ -15,7 +15,7 @@ You can find the recordings here:<br/>
 ## Prerequisites
 
  - Azure AD Tenant
- - Azure Subscription
+ - Azure Subscription (**not a free subscription, as this will not have enough CPU cores available**)
  - Azure Netapp enabled subscription
 
  > **IMPORTANT**<br/>
