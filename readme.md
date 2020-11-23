@@ -4,14 +4,6 @@ These are the Hands-on Lab steps, part of the *Microsoft & Cloud-Architect WVD A
 **These are part of the update on 01/12/2020** <a href="https://www.microsoft.com/partner-training/we/?aid=41560" target="_blank">Registration link</a>.<br/>
 <!-- If you have any questions, just ask **Micha** <a href="https://www.cloud-architect.be" target="_blank">(blog)</a> or **Bart** <a href="https://bartroels.github.io/2020-04-21-EverythingYouNeedtoKnowOnWVD/" target="_blank">(blog)</a> for further assistance<br/> -->
 
-
-## Slides + video from previous edition
-You can find the slides from the Presentation <a href="/CA-Microsoft-WVD_ARM-Workshop/Presentation/MSFT%20Workshop%20-%20Windows%20Virtual%20Desktop.pdf" target="_blank">here</a>
-You can find the recordings here:<br/>
-<a href="https://youtu.be/__Z4-zCNdlI" target="_blank">Part 1</a><br/>
-<a href="https://youtu.be/_j3IQfPfo_Q" target="_blank">Part 2</a><br/>
-<a href="https://youtu.be/6WCqaWWtyfY" target="_blank">Part 3</a><br/>
-
 ## Prerequisites
 
  - Azure AD Tenant
@@ -46,8 +38,6 @@ Before you begin, you have to determine the Azure AD Tenant & Windows AD setup f
 
 ### Scenario B)
 1. [Create test users & groups](/CA-Microsoft-WVD_ARM-Workshop/Create%20Test%20users%20and%20groups)
-
-![Footer](https://michawets.github.io/CA-Microsoft-WVD_ARM-Workshop/images/Footer.png)
 
 <script type="text/javascript">
     setTimeout(function() { 
