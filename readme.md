@@ -10,10 +10,6 @@ These are the Hands-on Lab steps, part of the *Microsoft & Cloud-Architect WVD A
  - Azure Subscription (**not a free subscription, as this will not have enough CPU cores available**)
  - Azure Netapp enabled subscription
 
- > **IMPORTANT**<br/>
- > You need to be granted access to the Azure NetApp Files service.<br/>
- > To request access to the service, see the <a href="https://aka.ms/azurenetappfiles" target="_blank">Azure NetApp Files waitlist submission page</a>.<br/>
- > You must wait for an official confirmation email from the Azure NetApp Files team before continuing.
 
 
 Before you begin, you have to determine the Azure AD Tenant & Windows AD setup for this lab.<br/>
@@ -39,12 +35,18 @@ Before you begin, you have to determine the Azure AD Tenant & Windows AD setup f
 ### Scenario B)
 1. [Create test users & groups](/CA-Microsoft-WVD_ARM-Workshop/Create%20Test%20users%20and%20groups)
 
+## Azure Netapp Files 
+ > **IMPORTANT**<br/>
+ > You need to be granted access to the Azure NetApp Files service.<br/>
+ > To request access to the service, see the <a href="https://aka.ms/azurenetappfiles" target="_blank">Azure NetApp Files waitlist submission page</a>.<br/>
+ > You must wait for an official confirmation email from the Azure NetApp Files team before continuing.
+
 <script type="text/javascript">
     setTimeout(function() { 
             document.getElementById("sidebar").style.display = "none";
-            var x = document.getElementsByClassName('inner'); 
+            var x = document.getElementsByClassName('inner');
             x[0].style.width = "90%";
-            var x = document.getElementsByTagName('h1'); 
+            var x = document.getElementsByTagName('h1');
             x[0].style.width = "90%";
             x[0].style.textAlign = "center"
             x[0].innerHTML = "Microsoft & Cloud-Architect WVD Workshop"
