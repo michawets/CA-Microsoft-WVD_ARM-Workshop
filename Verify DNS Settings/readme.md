@@ -1,4 +1,4 @@
-[Start](/CA-Microsoft-WVD_ARM-Workshop-update/) / [Verify your Virtual Network DNS settings](/CA-Microsoft-WVD_ARM-Workshop/Verify%20DNS%20Settings)
+[Start](/CA-Microsoft-WVD_ARM-Workshop/) / [Verify your Virtual Network DNS settings](/CA-Microsoft-WVD_ARM-Workshop/Verify%20DNS%20Settings)
 
 # Verify your Virtual Network (VNET) DNS settings
 
