@@ -34,7 +34,7 @@ Before you begin, you have to determine the Azure AD Tenant & Windows AD setup f
 ### Scenario B)
 1. [Create test users & groups](/CA-Microsoft-WVD_ARM-Workshop/Create%20Test%20users%20and%20groups)
 
-### DNS Settings
+### Verify DNS Settings
 1. [Verify your Virtual Network DNS settings](/CA-Microsoft-WVD_ARM-Workshop/Verify%20DNS%20Settings)
 
 ## Azure Netapp Files (Optional)
