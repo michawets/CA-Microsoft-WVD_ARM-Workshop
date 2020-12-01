@@ -68,6 +68,22 @@ Write-Host "Resource Provider OK."
 Get-AzResourceProvider -ProviderNamespace Microsoft.Compute, Microsoft.KeyVault, Microsoft.Storage | Where-Object RegistrationState -ne Registered | Register-AzResourceProvider
 ```
 
+ - Registering the Resource Provider for Managed Identities
+
+```powershell
+$resourceprovider = Get-AzResourceProvider -ProviderNamespace Microsoft.ManagedIdentity
+If ($resourceprovider.RegistrationState -ne "Registered") {
+    Write-Host "Resource Provider not yet Registered! Registering now..."
+    Register-AzResourceProvider -ProviderNamespace Microsoft.ManagedIdentity
+    Write-Host "Waiting loop until Resource Provider is Registered..."
+    Do {
+        Start-Sleep -Seconds 5
+    }
+    While ((Get-AzResourceProvider -ProviderNamespace Microsoft.ManagedIdentity).RegistrationState -ne "Registered")
+}
+Write-Host "Resource Provider OK."
+```
+
  - Install & Import Az.ManagedServiceIdentity & Az.ImageBuilder
 
 ```powershell
