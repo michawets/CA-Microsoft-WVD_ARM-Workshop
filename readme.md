@@ -7,6 +7,12 @@ These are the Hands-on Lab steps, part of the *Microsoft & Cloud-Architect WVD A
 If you have any questions, just ask **Micha** <a href="https://www.cloud-architect.be" target="_blank">(blog)</a> or **Bart** <a href="https://bartroels.github.io/2020-04-21-EverythingYouNeedtoKnowOnWVD/" target="_blank">(blog)</a> for further assistance
 <br/>
 
+
+## Slides + video
+You can find the slides from the Presentation <a href="/CA-Microsoft-WVD_ARM-Workshop/Presentation/WVD%20Technical%20Deep%20Dive.pdf" target="_blank">here</a>
+
+*You will find the recordings here soon*
+
 ## Prerequisites
 
  - Azure AD Tenant (global administrator)
